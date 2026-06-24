@@ -11,10 +11,16 @@ import { type Lang, t } from '../utils/i18n';
 interface Props {
   tool: CollectionEntry<'tools'>;
   lang: Lang;
+  bodyHtml?: string;
 }
 
-const { tool, lang } = Astro.props;
+const { tool, lang, bodyHtml } = Astro.props;
 const { data } = tool;
+
+// Select language-appropriate fields
+const title = lang === 'zh' && data.titleZh ? data.titleZh : data.title;
+const description = lang === 'zh' && data.descriptionZh ? data.descriptionZh : data.description;
+const faqItems = lang === 'zh' && data.faqZh?.length ? data.faqZh : data.faq;
 
 const allTools = await getCollection('tools');
 const alternativeTools = data.alternatives
@@ -26,7 +32,7 @@ const canonicalUrl = `https://aitoolscout.com/${lang}/tools/${tool.slug}`;
 const faqSchema = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: data.faq.map((item) => ({
+  mainEntity: faqItems.map((item) => ({
     '@type': 'Question',
     name: item.question,
     acceptedAnswer: {
@@ -39,8 +45,8 @@ const faqSchema = JSON.stringify({
 const ratingSchema = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: data.title,
-  description: data.description,
+  name: title,
+  description: description,
   applicationCategory: 'BusinessApplication',
   offers: {
     '@type': 'Offer',
@@ -58,8 +64,8 @@ const ratingSchema = JSON.stringify({
 
 <BaseLayout
   lang={lang}
-  title={`${data.title} Review`}
-  description={data.description}
+  title={`${title} Review`}
+  description={description}
   canonicalUrl={canonicalUrl}
   currentPath={`/${lang}/tools/${tool.slug}`}
 >
@@ -69,17 +75,17 @@ const ratingSchema = JSON.stringify({
   </Fragment>
 
   <Breadcrumb lang={lang} crumbs={[
-    { label: 'Home', href: '/' },
+    { label: t(lang, 'breadcrumb.home'), href: '/' },
     { label: t(lang, 'nav.allTools'), href: '/tools' },
-    { label: data.title },
+    { label: title },
   ]} />
 
   <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="flex items-start gap-6 mb-8">
-      <img src={data.logo} alt={`${data.title} logo`} class="w-20 h-20 rounded-xl" />
+      <img src={data.logo} alt={`${title} logo`} class="w-20 h-20 rounded-xl" />
       <div class="flex-1">
-        <h1 class="text-3xl font-bold text-gray-900">{data.title}</h1>
-        <p class="mt-2 text-lg text-gray-600">{data.description}</p>
+        <h1 class="text-3xl font-bold text-gray-900">{title}</h1>
+        <p class="mt-2 text-lg text-gray-600">{description}</p>
         <div class="mt-3 flex items-center gap-4">
           <StarRating rating={data.rating} size="md" />
           <span class="px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-700">{t(lang, `pricing.${data.pricing}`)}</span>
@@ -95,22 +101,22 @@ const ratingSchema = JSON.stringify({
         target="_blank"
         class="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-xl transition-colors"
       >
-        {t(lang, 'toolDetail.visit')} {data.title} →
+        {t(lang, 'toolDetail.visit')} {title} →
       </a>
       <span class="ml-3 text-xs text-gray-400">{t(lang, 'toolDetail.sponsoredLink')}</span>
     </div>
 
     <div class="prose prose-lg max-w-none mb-8">
-      <slot />
+      {bodyHtml ? <Fragment set:html={bodyHtml} /> : <slot />}
     </div>
 
     <AdSlot position="tool-detail-mid" />
 
-    {data.faq.length > 0 && <FAQ items={data.faq} />}
+    {faqItems.length > 0 && <FAQ items={faqItems} lang={lang} />}
 
     {alternativeTools.length > 0 && (
       <section class="mt-12">
-        <h2 class="text-2xl font-bold text-gray-900 mb-6">{t(lang, 'toolDetail.alternatives')} {data.title}</h2>
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">{t(lang, 'toolDetail.alternatives')} {title}</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {alternativeTools.map((alt) => (
             <a href={`/${lang}/tools/${alt.slug}`} class="block p-4 border border-gray-200 rounded-xl hover:border-primary-300 hover:shadow-sm transition-all">

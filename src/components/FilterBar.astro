@@ -12,7 +12,7 @@ interface Props {
 const { lang, currentCategory = '', currentPricing = '', currentSort = 'rating', categories } = Astro.props;
 ---
 
-<div class="flex flex-wrap items-center gap-3 mb-6">
+<div class="flex flex-wrap items-center gap-3 mb-6" id="filter-bar">
   <select id="filter-category" class="px-3 py-2 border border-gray-200 rounded-lg text-sm bg-white" data-filter="category">
     <option value="" selected={!currentCategory}>{t(lang, 'tools.allCategories')}</option>
     {categories.map((cat) => (
@@ -33,3 +33,56 @@ const { lang, currentCategory = '', currentPricing = '', currentSort = 'rating',
     <option value="name" selected={currentSort === 'name'}>{t(lang, 'tools.az')}</option>
   </select>
 </div>
+
+<script>
+  (function() {
+    const filterBar = document.getElementById('filter-bar');
+    if (!filterBar) return;
+    const toolGrid = filterBar.nextElementSibling;
+    if (!toolGrid) return;
+
+    function applyFilters() {
+      const category = document.getElementById('filter-category')?.value || '';
+      const pricing = document.getElementById('filter-pricing')?.value || '';
+      const sort = document.getElementById('filter-sort')?.value || 'rating';
+
+      const cards = toolGrid.querySelectorAll('[data-tool-card]');
+      let visibleCards = Array.from(cards).filter(function(card) {
+        const cat = card.getAttribute('data-category');
+        const price = card.getAttribute('data-pricing');
+        if (category && cat !== category) return false;
+        if (pricing && price !== pricing) return false;
+        return true;
+      });
+
+      if (sort === 'name') {
+        visibleCards.sort(function(a, b) {
+          const nameA = (a.getAttribute('data-title') || '').toLowerCase();
+          const nameB = (b.getAttribute('data-title') || '').toLowerCase();
+          return nameA.localeCompare(nameB);
+        });
+      } else if (sort === 'newest') {
+        visibleCards.sort(function(a, b) {
+          return (b.getAttribute('data-date') || '').localeCompare(a.getAttribute('data-date') || '');
+        });
+      } else {
+        visibleCards.sort(function(a, b) {
+          return (parseFloat(b.getAttribute('data-rating') || '0')) - (parseFloat(a.getAttribute('data-rating') || '0'));
+        });
+      }
+
+      cards.forEach(function(c) { c.style.display = 'none'; });
+      visibleCards.forEach(function(c) { c.style.display = ''; });
+      toolGrid.innerHTML = '';
+      visibleCards.forEach(function(c) { toolGrid.appendChild(c); });
+
+      // Update count
+      const countEl = document.getElementById('tool-count');
+      if (countEl) countEl.textContent = visibleCards.length;
+    }
+
+    document.getElementById('filter-category')?.addEventListener('change', applyFilters);
+    document.getElementById('filter-pricing')?.addEventListener('change', applyFilters);
+    document.getElementById('filter-sort')?.addEventListener('change', applyFilters);
+  })();
+</script>

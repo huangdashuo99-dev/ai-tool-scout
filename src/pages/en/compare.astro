@@ -14,6 +14,22 @@ const defaultCompareSlugs = ['chatgpt', 'midjourney', 'github-copilot'];
 const defaultTools = defaultCompareSlugs
   .map((slug) => allTools.find((t) => t.slug === slug))
   .filter(Boolean);
+
+// Build tool data map for client-side JS
+const toolDataMap: Record<string, any> = {};
+for (const tool of allTools) {
+  toolDataMap[tool.slug] = {
+    title: tool.data.title,
+    logo: tool.data.logo,
+    rating: tool.data.rating,
+    pricing: tool.data.pricing,
+    pricingLabel: t(lang, `pricing.${tool.data.pricing}`) + ' (' + tool.data.priceFrom + ')',
+    priceFrom: tool.data.priceFrom,
+    category: tool.data.category,
+    tags: tool.data.tags.slice(0, 3).join(', '),
+    affiliateUrl: tool.data.affiliateUrl,
+  };
+}
 ---
 
 <BaseLayout
@@ -35,7 +51,7 @@ const defaultTools = defaultCompareSlugs
     <div class="mt-6 flex flex-wrap gap-3" id="compare-selector">
       {sortedTools.map((tool) => (
         <label class="flex items-center gap-2 px-3 py-2 border border-gray-200 rounded-lg cursor-pointer hover:border-primary-300 transition-colors has-[:checked]:border-primary-500 has-[:checked]:bg-primary-50">
-          <input type="checkbox" value={tool.slug} class="compare-checkbox accent-primary-600" />
+          <input type="checkbox" value={tool.slug} class="compare-checkbox accent-primary-600" checked={defaultCompareSlugs.includes(tool.slug)} />
           <img src={tool.data.logo} alt={tool.data.title} class="w-6 h-6 rounded" />
           <span class="text-sm">{tool.data.title}</span>
         </label>
@@ -47,3 +63,57 @@ const defaultTools = defaultCompareSlugs
     </div>
   </section>
 </BaseLayout>
+
+<script type="application/json" id="tool-data">{JSON.stringify(toolDataMap)}</script>
+
+<script>
+  (function() {
+    var checkboxes = document.querySelectorAll('.compare-checkbox');
+    var resultDiv = document.getElementById('compare-result');
+    var toolDataEl = document.getElementById('tool-data');
+    var toolMap = {};
+    if (toolDataEl) {
+      try { toolMap = JSON.parse(toolDataEl.textContent || '{}'); } catch(e) {}
+    }
+
+    function updateCompare() {
+      var selected = [];
+      checkboxes.forEach(function(cb) { if (cb.checked) selected.push(cb.value); });
+      selected = selected.slice(0, 3);
+
+      if (selected.length < 2) {
+        resultDiv.innerHTML = '<p class="text-gray-400 text-center py-8">Select at least 2 tools to compare.</p>';
+        return;
+      }
+
+      var selectedTools = selected.map(function(slug) { return toolMap[slug]; }).filter(Boolean);
+
+      var html = '<div class="overflow-x-auto"><table class="w-full border-collapse"><thead><tr class="border-b-2 border-gray-200"><th class="p-4 text-left text-sm font-semibold text-gray-500">Feature</th>';
+      selectedTools.forEach(function(t) {
+        html += '<th class="p-4 text-center text-sm font-semibold text-gray-900"><img src="' + t.logo + '" alt="' + t.title + '" class="w-10 h-10 rounded-lg mx-auto mb-1" />' + t.title + '</th>';
+      });
+      html += '</tr></thead><tbody>';
+      var rows = [
+        { label: 'Rating', key: 'rating' },
+        { label: 'Pricing', key: 'pricingLabel' },
+        { label: 'Category', key: 'category' },
+        { label: 'Tags', key: 'tags' },
+      ];
+      rows.forEach(function(row) {
+        html += '<tr class="border-b border-gray-100"><td class="p-4 text-sm text-gray-500">' + row.label + '</td>';
+        selectedTools.forEach(function(t) {
+          html += '<td class="p-4 text-center text-sm">' + (t[row.key] || '') + '</td>';
+        });
+        html += '</tr>';
+      });
+      html += '<tr><td class="p-4 text-sm text-gray-500">Visit</td>';
+      selectedTools.forEach(function(t) {
+        html += '<td class="p-4 text-center"><a href="' + t.affiliateUrl + '" rel="nofollow sponsored" target="_blank" class="px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white text-sm font-medium rounded-lg transition-colors">Visit →</a></td>';
+      });
+      html += '</tr></tbody></table></div>';
+      resultDiv.innerHTML = html;
+    }
+
+    checkboxes.forEach(function(cb) { cb.addEventListener('change', updateCompare); });
+  })();
+</script>

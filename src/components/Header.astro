@@ -29,9 +29,14 @@ const otherLang: Lang = lang === 'en' ? 'zh' : 'en';
 
       <div class="hidden md:flex items-center gap-6">
         <a href={`/${lang}/tools`} class="text-gray-600 hover:text-primary-600 transition-colors">{t(lang, 'nav.allTools')}</a>
-        <div class="relative group">
-          <button class="text-gray-600 hover:text-primary-600 transition-colors">{t(lang, 'nav.categories')} ▾</button>
-          <div class="absolute top-full left-0 mt-1 w-48 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+        <div class="relative group" data-dropdown>
+          <button
+            class="text-gray-600 hover:text-primary-600 transition-colors"
+            aria-expanded="false"
+            aria-haspopup="true"
+            data-dropdown-btn
+          >{t(lang, 'nav.categories')} ▾</button>
+          <div class="absolute top-full left-0 mt-1 w-48 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all" data-dropdown-menu>
             {sortedCategories.map((cat) => (
               <a href={`/${lang}/categories/${cat.slug}`} class="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600">
                 {cat.data.icon} {cat.data.title}
@@ -39,9 +44,14 @@ const otherLang: Lang = lang === 'en' ? 'zh' : 'en';
             ))}
           </div>
         </div>
-        <div class="relative group">
-          <button class="text-gray-600 hover:text-primary-600 transition-colors">{t(lang, 'nav.scenarios')} ▾</button>
-          <div class="absolute top-full left-0 mt-1 w-56 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+        <div class="relative group" data-dropdown>
+          <button
+            class="text-gray-600 hover:text-primary-600 transition-colors"
+            aria-expanded="false"
+            aria-haspopup="true"
+            data-dropdown-btn
+          >{t(lang, 'nav.scenarios')} ▾</button>
+          <div class="absolute top-full left-0 mt-1 w-56 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all" data-dropdown-menu>
             {scenarios.map((s) => (
               <a href={`/${lang}/scenarios/${s.slug}`} class="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600">
                 {s.data.icon} {s.data.title}
@@ -57,14 +67,14 @@ const otherLang: Lang = lang === 'en' ? 'zh' : 'en';
             href={switchLangPath(currentPath, 'en')}
             class={`px-1 transition-colors ${lang === 'en' ? 'text-primary-600 font-semibold' : 'text-gray-400 hover:text-gray-600'}`}
           >
-            {t('en', 'lang.en')}
+            EN
           </a>
           <span class="text-gray-300">|</span>
           <a
             href={switchLangPath(currentPath, 'zh')}
             class={`px-1 transition-colors ${lang === 'zh' ? 'text-primary-600 font-semibold' : 'text-gray-400 hover:text-gray-600'}`}
           >
-            {t('zh', 'lang.zh')}
+            中文
           </a>
         </div>
       </div>
@@ -98,14 +108,14 @@ const otherLang: Lang = lang === 'en' ? 'zh' : 'en';
           href={switchLangPath(currentPath, 'en')}
           class={`px-1 transition-colors ${lang === 'en' ? 'text-primary-600 font-semibold' : 'text-gray-400 hover:text-gray-600'}`}
         >
-          {t('en', 'lang.en')}
+          EN
         </a>
         <span class="text-gray-300">|</span>
         <a
           href={switchLangPath(currentPath, 'zh')}
           class={`px-1 transition-colors ${lang === 'zh' ? 'text-primary-600 font-semibold' : 'text-gray-400 hover:text-gray-600'}`}
         >
-          {t('zh', 'lang.zh')}
+          中文
         </a>
       </div>
     </div>
@@ -116,4 +126,36 @@ const otherLang: Lang = lang === 'en' ? 'zh' : 'en';
   const btn = document.getElementById('mobile-menu-btn');
   const menu = document.getElementById('mobile-menu');
   btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+
+  // Touch/keyboard-accessible dropdowns
+  document.querySelectorAll('[data-dropdown]').forEach(function(dropdown) {
+    const btn = dropdown.querySelector('[data-dropdown-btn]');
+    const menu = dropdown.querySelector('[data-dropdown-menu]');
+    if (!btn || !menu) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const isOpen = menu.classList.contains('opacity-100');
+      menu.classList.toggle('opacity-0', isOpen);
+      menu.classList.toggle('invisible', isOpen);
+      menu.classList.toggle('opacity-100', !isOpen);
+      menu.classList.toggle('visible', !isOpen);
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+    // Close on Escape
+    btn.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        menu.classList.add('opacity-0', 'invisible');
+        menu.classList.remove('opacity-100', 'visible');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+    // Close on outside click
+    document.addEventListener('click', function(e) {
+      if (!dropdown.contains(e.target)) {
+        menu.classList.add('opacity-0', 'invisible');
+        menu.classList.remove('opacity-100', 'visible');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
 </script>

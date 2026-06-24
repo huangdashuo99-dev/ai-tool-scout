@@ -26,17 +26,23 @@ const { lang } = Astro.props;
 </div>
 
 <script>
-  const consent = localStorage.getItem('cookie-consent');
-  const banner = document.getElementById('cookie-consent');
-  if (!consent && banner) {
-    banner.classList.remove('hidden');
-  }
-  document.getElementById('cookie-accept')?.addEventListener('click', () => {
-    localStorage.setItem('cookie-consent', 'accepted');
-    banner?.classList.add('hidden');
-  });
-  document.getElementById('cookie-decline')?.addEventListener('click', () => {
-    localStorage.setItem('cookie-consent', 'declined');
-    banner?.classList.add('hidden');
-  });
+  (function() {
+    try {
+      var consent = localStorage.getItem('cookie-consent');
+      var banner = document.getElementById('cookie-consent');
+      if (!consent && banner) {
+        banner.classList.remove('hidden');
+      }
+      document.getElementById('cookie-accept')?.addEventListener('click', function() {
+        try { localStorage.setItem('cookie-consent', 'accepted'); } catch(e) {}
+        banner?.classList.add('hidden');
+      });
+      document.getElementById('cookie-decline')?.addEventListener('click', function() {
+        try { localStorage.setItem('cookie-consent', 'declined'); } catch(e) {}
+        banner?.classList.add('hidden');
+      });
+    } catch(e) {
+      // localStorage unavailable (e.g. Safari private browsing) — banner stays hidden
+    }
+  })();
 </script>

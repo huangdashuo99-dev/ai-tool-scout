@@ -1,13 +1,16 @@
 ---
+import { type Lang, t } from '../utils/i18n';
+
 interface Props {
   items: Array<{ question: string; answer: string }>;
+  lang?: Lang;
 }
 
-const { items } = Astro.props;
+const { items, lang } = Astro.props;
 ---
 
 <section class="mt-8">
-  <h2 class="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+  <h2 class="text-2xl font-bold text-gray-900 mb-6">{lang ? t(lang, 'toolDetail.faq') : 'Frequently Asked Questions'}</h2>
   <div class="space-y-4">
     {items.map((item) => (
       <details class="group border border-gray-200 rounded-xl">

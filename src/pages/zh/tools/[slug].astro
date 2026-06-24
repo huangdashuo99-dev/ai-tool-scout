@@ -1,22 +1,26 @@
 ---
 import ToolLayout from '../../../layouts/ToolLayout.astro';
-import { getCollection, render } from 'astro:content';
+import { getCollection } from 'astro:content';
+import { marked } from 'marked';
 import { type Lang } from '../../../utils/i18n';
 
 const lang: Lang = 'zh';
 
 export async function getStaticPaths() {
   const tools = await getCollection('tools');
-  return tools.map((tool) => ({
-    params: { slug: tool.slug },
-    props: { tool },
-  }));
+  return tools.map((tool) => {
+    const parts = tool.body?.split(/\n---\n/) || [''];
+    const enBody = parts[0] || '';
+    const zhBody = parts.length > 1 ? parts[1] : enBody;
+    return {
+      params: { slug: tool.slug },
+      props: { tool, enBodyHtml: marked.parse(enBody) as string, zhBodyHtml: marked.parse(zhBody) as string },
+    };
+  });
 }
 
-const { tool } = Astro.props;
-const { Content } = await render(tool);
+const { tool, enBodyHtml, zhBodyHtml } = Astro.props;
+const bodyHtml = lang === 'zh' ? zhBodyHtml : enBodyHtml;
 ---
 
-<ToolLayout tool={tool} lang={lang}>
-  <Content />
-</ToolLayout>
+<ToolLayout tool={tool} lang={lang} bodyHtml={bodyHtml} />

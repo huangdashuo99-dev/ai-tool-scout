@@ -4,3 +4,25 @@
 <div id="searchbar" class="relative">
   <div id="search" class="w-full"></div>
 </div>
+
+<script>
+  // Initialize Pagefind search UI on client
+  async function initSearch() {
+    try {
+      const pagefind = await import('/pagefind/pagefind.js');
+      await pagefind.options({ basePath: '/pagefind' });
+      const searchEls = document.querySelectorAll('#search');
+      if (searchEls.length > 0) {
+        // Use the first visible #search element (skip header's hidden one)
+        const visibleSearch = Array.from(searchEls).find(el => {
+          const style = window.getComputedStyle(el);
+          return style.display !== 'none' && style.visibility !== 'hidden';
+        }) || searchEls[0];
+        new pagefind.PagefindUI({ element: visibleSearch });
+      }
+    } catch (e) {
+      console.warn('Pagefind search not available:', e.message);
+    }
+  }
+  initSearch();
+</script>

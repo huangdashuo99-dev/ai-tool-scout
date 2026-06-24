@@ -14,7 +14,8 @@ interface Props {
   currentPath?: string;
 }
 
-const { lang, title, description, canonicalUrl, ogImage = '/og-default.png', currentPath = '' } = Astro.props;
+const { lang, title, description, canonicalUrl, ogImage, currentPath = '' } = Astro.props;
+const ogImageUrl = ogImage || '/favicon.svg';
 const siteTitle = `${title} | AI Tool Scout`;
 const htmlLang = lang === 'zh' ? 'zh-CN' : 'en';
 const otherLang: Lang = lang === 'en' ? 'zh' : 'en';
@@ -33,7 +34,7 @@ const alternateUrl = canonicalUrl ? canonicalUrl.replace(`/${lang}/`, `/${otherL
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta property="og:title" content={siteTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={ogImage} />
+    <meta property="og:image" content={ogImageUrl} />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={siteTitle} />
@@ -50,5 +51,35 @@ const alternateUrl = canonicalUrl ? canonicalUrl.replace(`/${lang}/`, `/${otherL
     </main>
     <Footer lang={lang} />
     <CookieConsent lang={lang} />
+    <script>
+      // Initialize Pagefind search UI
+      (function() {
+        var searchEls = document.querySelectorAll('#search');
+        if (!searchEls.length) return;
+        // Find first visible search element
+        var target = null;
+        for (var i = 0; i < searchEls.length; i++) {
+          var el = searchEls[i];
+          var style = window.getComputedStyle(el);
+          if (style.display !== 'none' && style.visibility !== 'hidden' && !el.closest('#mobile-menu')) {
+            target = el;
+            break;
+          }
+        }
+        if (!target) target = searchEls[0];
+        // Dynamic import of pagefind
+        var script = document.createElement('script');
+        script.src = '/pagefind/pagefind.js';
+        script.onload = function() {
+          try {
+            if (window.PagefindUI) {
+              new window.PagefindUI({ element: target });
+            }
+          } catch(e) { console.warn('Pagefind init failed:', e); }
+        };
+        script.onerror = function() { console.warn('Pagefind not available'); };
+        document.head.appendChild(script);
+      })();
+    </script>
   </body>
 </html>

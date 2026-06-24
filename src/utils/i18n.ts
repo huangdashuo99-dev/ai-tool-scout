@@ -18,7 +18,11 @@ export function t(lang: Lang, key: string): string {
   for (const k of keys) {
     value = value?.[k];
   }
-  return value || t(defaultLang, key) || key;
+  if (value !== undefined && value !== null) return String(value);
+  // Only fall back to defaultLang if we're not already at the default
+  if (lang !== defaultLang) return t(defaultLang, key);
+  // At defaultLang with no match — return the key itself
+  return key;
 }
 
 export function getLangFromUrl(url: URL): Lang {
