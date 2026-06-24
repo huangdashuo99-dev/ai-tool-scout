@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { type Lang, t } from '../../utils/i18n';
+
+const lang: Lang = 'zh';
+---
+
+<BaseLayout
+  lang={lang}
+  title={t(lang, 'affiliate.pageTitle')}
+  description={t(lang, 'affiliate.pageDescription')}
+  canonicalUrl={`https://aitoolscout.com/${lang}/affiliate-disclosure`}
+  currentPath={`/${lang}/affiliate-disclosure`}
+>
+  <Breadcrumb lang={lang} crumbs={[
+    { label: t(lang, 'breadcrumb.home'), href: '/' },
+    { label: t(lang, 'breadcrumb.affiliateDisclosure') },
+  ]} />
+
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8 prose prose-lg">
+    <h1>Affiliate Disclosure</h1>
+    <p><em>Last updated: June 17, 2026</em></p>
+
+    <h2>How We Make Money</h2>
+    <p>AI Tool Scout earns revenue through three channels:</p>
+
+    <h3>1. Affiliate Commissions</h3>
+    <p>Some links on this site are affiliate links. When you click an affiliate link and make a purchase or sign up for a service, we may earn a commission at <strong>no additional cost to you</strong>. These commissions help us keep the site running and continue producing reviews.</p>
+    <p>Our affiliate relationships include:</p>
+    <ul>
+      <li>Direct affiliate programs with AI tool providers</li>
+      <li>Impact Radius affiliate network</li>
+      <li>ShareASale affiliate network</li>
+    </ul>
+
+    <h3>2. Advertising</h3>
+    <p>We display ads through Google AdSense. Ads are clearly distinguishable from editorial content.</p>
+
+    <h3>3. Sponsorships</h3>
+    <p>We may accept sponsorships for featured placement. Sponsored tools are clearly labeled.</p>
+
+    <h2>Our Editorial Independence</h2>
+    <p><strong>Affiliate relationships do not influence our reviews or ratings.</strong> We test every tool ourselves and rate it honestly. A higher commission does not result in a higher rating.</p>
+    <p>If a tool is bad, we'll say so — even if we could earn a commission from it.</p>
+
+    <h2>How to Identify Affiliate Links</h2>
+    <p>Affiliate links on this site are marked with:</p>
+    <ul>
+      <li>A "Sponsored link" label near the link</li>
+      <li><code>rel="nofollow sponsored"</code> HTML attributes (for search engines)</li>
+    </ul>
+
+    <h2>FTC Compliance</h2>
+    <p>This disclosure complies with the FTC's guidelines on endorsements and testimonials (16 CFR Part 255). We are required to disclose any material connection between ourselves and the products we recommend.</p>
+  </article>
+</BaseLayout>

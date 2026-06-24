@@ -1,0 +1,54 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CookieConsent from '../components/CookieConsent.astro';
+import '../styles/global.css';
+import { type Lang, switchLangPath } from '../utils/i18n';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  canonicalUrl?: string;
+  ogImage?: string;
+  currentPath?: string;
+}
+
+const { lang, title, description, canonicalUrl, ogImage = '/og-default.png', currentPath = '' } = Astro.props;
+const siteTitle = `${title} | AI Tool Scout`;
+const htmlLang = lang === 'zh' ? 'zh-CN' : 'en';
+const otherLang: Lang = lang === 'en' ? 'zh' : 'en';
+const alternateUrl = canonicalUrl ? canonicalUrl.replace(`/${lang}/`, `/${otherLang}/`) : '';
+---
+
+<!doctype html>
+<html lang={htmlLang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{siteTitle}</title>
+    <meta name="description" content={description} />
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:title" content={siteTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={siteTitle} />
+    <meta name="twitter:description" content={description} />
+    {canonicalUrl && <link rel="alternate" hreflang={lang} href={canonicalUrl} />}
+    {alternateUrl && <link rel="alternate" hreflang={otherLang} href={alternateUrl} />}
+    <link rel="alternate" hreflang="x-default" href={canonicalUrl?.replace(`/${lang}/`, '/en/') || ''} />
+    <slot name="head" />
+  </head>
+  <body class="min-h-screen flex flex-col bg-white text-gray-900">
+    <Header lang={lang} currentPath={currentPath} />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+    <CookieConsent lang={lang} />
+  </body>
+</html>

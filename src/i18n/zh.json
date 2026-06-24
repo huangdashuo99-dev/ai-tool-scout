@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "allTools": "全部工具",
+    "categories": "分类",
+    "scenarios": "场景",
+    "rankings": "排行榜",
+    "compare": "对比",
+    "menu": "菜单"
+  },
+  "home": {
+    "heroTitle1": "发现最好的",
+    "heroTitle2": "AI 工具",
+    "heroSubtitle": "找到、对比、选择最适合你的 AI 工具。真实评测、实时排名、场景化推荐。",
+    "topTools": "Top 10 AI 工具",
+    "viewAllRankings": "查看完整排行 →",
+    "whatDoYouWant": "你想做什么？",
+    "newThisWeek": "本周新工具",
+    "browseByCategory": "按分类浏览"
+  },
+  "tools": {
+    "pageTitle": "全部 AI 工具",
+    "pageSubtitle": "个工具评测，持续更新",
+    "allCategories": "全部分类",
+    "allPricing": "全部价格",
+    "topRated": "评分最高",
+    "newest": "最新",
+    "az": "A-Z",
+    "new": "新"
+  },
+  "toolDetail": {
+    "visit": "访问",
+    "sponsoredLink": "赞助链接",
+    "alternatives": "的替代工具",
+    "faq": "常见问题",
+    "from": "起步价"
+  },
+  "rankings": {
+    "pageTitle": "AI 工具排行榜",
+    "pageSubtitle": "按专家评分排名，同分按新增时间倒序排列。",
+    "all": "全部"
+  },
+  "compare": {
+    "pageTitle": "对比 AI 工具",
+    "pageSubtitle": "选择 2-3 个工具进行并排对比。",
+    "feature": "特性",
+    "logo": "图标",
+    "rating": "评分",
+    "pricing": "价格",
+    "category": "分类",
+    "tags": "标签",
+    "visit": "访问 →"
+  },
+  "scenarios": {
+    "toolsCount": "个工具 →"
+  },
+  "footer": {
+    "description": "发现、对比、选择最适合你的 AI 工具。",
+    "categories": "分类",
+    "resources": "资源",
+    "legal": "法律",
+    "privacyPolicy": "隐私政策",
+    "affiliateDisclosure": "联盟披露",
+    "copyright": "AI Tool Scout. 保留所有权利。",
+    "affiliateNotice": "本站部分链接为联盟链接，我们可能从中获得佣金，不增加您的费用。"
+  },
+  "cookie": {
+    "message": "我们使用 Cookie 进行分析并改善您的体验。继续使用本站即表示您同意",
+    "privacyPolicy": "隐私政策",
+    "accept": "接受",
+    "decline": "拒绝"
+  },
+  "pricing": {
+    "free": "免费",
+    "freemium": "免费增值",
+    "paid": "付费"
+  },
+  "common": {
+    "tools": "个工具",
+    "toolsCount": "个工具 →"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "allTools": "全部工具",
+    "rankings": "排行榜",
+    "compare": "对比",
+    "about": "关于",
+    "privacy": "隐私政策",
+    "affiliateDisclosure": "联盟披露",
+    "scenarios": "场景",
+    "categories": "分类"
+  },
+  "about": {
+    "pageTitle": "关于我们",
+    "pageDescription": "AI Tool Scout 帮助你发现、对比、选择最好的 AI 工具。了解我们的使命和评测方式。"
+  },
+  "privacy": {
+    "pageTitle": "隐私政策",
+    "pageDescription": "AI Tool Scout 隐私政策。了解我们如何处理你的数据和 Cookie。"
+  },
+  "affiliate": {
+    "pageTitle": "联盟披露",
+    "pageDescription": "AI Tool Scout 联盟披露。关于我们如何通过联盟链接和赞助获得收入的透明说明。"
+  },
+  "lang": {
+    "en": "EN",
+    "zh": "中文"
+  }
+}

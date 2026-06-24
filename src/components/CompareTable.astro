@@ -1,0 +1,73 @@
+---
+import StarRating from './StarRating.astro';
+import type { CollectionEntry } from 'astro:content';
+import { type Lang, t } from '../utils/i18n';
+
+interface Props {
+  tools: CollectionEntry<'tools'>[];
+  lang: Lang;
+}
+
+const { tools, lang } = Astro.props;
+---
+
+<div class="overflow-x-auto">
+  <table class="w-full border-collapse">
+    <thead>
+      <tr class="border-b-2 border-gray-200">
+        <th class="p-4 text-left text-sm font-semibold text-gray-500">{t(lang, 'compare.feature')}</th>
+        {tools.map((tool) => (
+          <th class="p-4 text-center text-sm font-semibold text-gray-900">{tool.data.title}</th>
+        ))}
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b border-gray-100">
+        <td class="p-4 text-sm text-gray-500">{t(lang, 'compare.logo')}</td>
+        {tools.map((tool) => (
+          <td class="p-4 text-center"><img src={tool.data.logo} alt={tool.data.title} class="w-10 h-10 rounded-lg mx-auto" /></td>
+        ))}
+      </tr>
+      <tr class="border-b border-gray-100">
+        <td class="p-4 text-sm text-gray-500">{t(lang, 'compare.rating')}</td>
+        {tools.map((tool) => (
+          <td class="p-4 text-center"><StarRating rating={tool.data.rating} size="sm" /></td>
+        ))}
+      </tr>
+      <tr class="border-b border-gray-100">
+        <td class="p-4 text-sm text-gray-500">{t(lang, 'compare.pricing')}</td>
+        {tools.map((tool) => (
+          <td class="p-4 text-center text-sm">{t(lang, `pricing.${tool.data.pricing}`)} ({tool.data.priceFrom})</td>
+        ))}
+      </tr>
+      <tr class="border-b border-gray-100">
+        <td class="p-4 text-sm text-gray-500">{t(lang, 'compare.category')}</td>
+        {tools.map((tool) => (
+          <td class="p-4 text-center text-sm capitalize">{tool.data.category}</td>
+        ))}
+      </tr>
+      <tr class="border-b border-gray-100">
+        <td class="p-4 text-sm text-gray-500">{t(lang, 'compare.tags')}</td>
+        {tools.map((tool) => (
+          <td class="p-4 text-center">
+            <div class="flex flex-wrap justify-center gap-1">
+              {tool.data.tags.slice(0, 3).map((tag) => (
+                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 rounded text-xs">{tag}</span>
+              ))}
+            </div>
+          </td>
+        ))}
+      </tr>
+      <tr>
+        <td class="p-4 text-sm text-gray-500">{t(lang, 'toolDetail.visit')}</td>
+        {tools.map((tool) => (
+          <td class="p-4 text-center">
+            <a href={tool.data.affiliateUrl} rel="nofollow sponsored" target="_blank" class="px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white text-sm font-medium rounded-lg transition-colors">
+              {t(lang, 'compare.visit')}
+            </a>
+          </td>
+        ))}
+      </tr>
+    </tbody>
+  </table>
+</div>

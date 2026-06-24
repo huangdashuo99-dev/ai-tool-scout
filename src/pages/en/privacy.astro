@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { type Lang, t } from '../../utils/i18n';
+
+const lang: Lang = 'en';
+---
+
+<BaseLayout
+  lang={lang}
+  title={t(lang, 'privacy.pageTitle')}
+  description={t(lang, 'privacy.pageDescription')}
+  canonicalUrl={`https://aitoolscout.com/${lang}/privacy`}
+  currentPath={`/${lang}/privacy`}
+>
+  <Breadcrumb lang={lang} crumbs={[
+    { label: t(lang, 'breadcrumb.home'), href: '/' },
+    { label: t(lang, 'breadcrumb.privacy') },
+  ]} />
+
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8 prose prose-lg">
+    <h1>Privacy Policy</h1>
+    <p><em>Last updated: June 17, 2026</em></p>
+
+    <h2>Information We Collect</h2>
+    <p>AI Tool Scout is a static website. We do not collect personal information directly. However, third-party services we use may collect data:</p>
+    <ul>
+      <li><strong>Google Analytics</strong> — Collects anonymized usage data (page views, referral source, device type). You can opt out via our cookie consent banner.</li>
+      <li><strong>Google AdSense</strong> — May serve personalized ads based on browsing behavior. You can manage ad personalization at <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ads Settings</a>.</li>
+    </ul>
+
+    <h2>Cookies</h2>
+    <p>We use cookies for:</p>
+    <ul>
+      <li>Analytics (Google Analytics)</li>
+      <li>Advertising (Google AdSense)</li>
+      <li>Cookie consent preference</li>
+    </ul>
+    <p>You can control cookies through your browser settings or our cookie consent banner.</p>
+
+    <h2>Affiliate Links</h2>
+    <p>Some links on this site are affiliate links. Clicking these links may set third-party cookies from the merchant's site. We are not responsible for the privacy practices of third-party merchants.</p>
+
+    <h2>Your Rights (GDPR)</h2>
+    <p>If you are in the EU/EEA, you have the right to:</p>
+    <ul>
+      <li>Access any personal data we hold about you</li>
+      <li>Request deletion of your data</li>
+      <li>Object to processing of your data</li>
+      <li>Data portability</li>
+    </ul>
+    <p>Contact us at <strong>privacy@aitoolscout.com</strong> to exercise these rights.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this policy from time to time. Changes will be posted on this page with an updated date.</p>
+  </article>
+</BaseLayout>

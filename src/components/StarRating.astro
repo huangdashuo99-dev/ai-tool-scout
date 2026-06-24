@@ -1,0 +1,32 @@
+---
+interface Props {
+  rating: number;
+  size?: 'sm' | 'md' | 'lg';
+}
+
+const { rating, size = 'md' } = Astro.props;
+const sizeClass = { sm: 'w-4 h-4', md: 'w-5 h-5', lg: 'w-6 h-6' }[size];
+const fullStars = Math.floor(rating);
+const hasHalf = rating - fullStars >= 0.5;
+const emptyStars = 5 - fullStars - (hasHalf ? 1 : 0);
+---
+
+<div class="flex items-center gap-1" aria-label={`Rating: ${rating} out of 5`}>
+  {Array.from({ length: fullStars }).map(() => (
+    <svg class={sizeClass} fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.921 0 1.325 1.016.63 1.558l-2.8 2.154a1 1 0 00-.342 1.02l1.07 3.292c.3.921-.755 1.627-1.558.63L10 13.148l-2.8 2.154c-.783.627-1.858-.709-1.558-.63l1.07-3.292a1 1 0 00-.342-1.02L3.6 8.467c-.783-.627-.021-1.558.63-1.558h3.462a1 1 0 00.95-.69l1.07-3.292z"/>
+    </svg>
+  ))}
+  {hasHalf && (
+    <svg class={sizeClass} fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <defs><linearGradient id="half"><stop offset="50%" stop-color="currentColor"/><stop offset="50%" stop-color="#e5e7eb"/></linearGradient></defs>
+      <path fill="url(#half)" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.921 0 1.325 1.016.63 1.558l-2.8 2.154a1 1 0 00-.342 1.02l1.07 3.292c.3.921-.755 1.627-1.558.63L10 13.148l-2.8 2.154c-.783.627-1.858-.709-1.558-.63l1.07-3.292a1 1 0 00-.342-1.02L3.6 8.467c-.783-.627-.021-1.558.63-1.558h3.462a1 1 0 00.95-.69l1.07-3.292z"/>
+    </svg>
+  )}
+  {Array.from({ length: emptyStars }).map(() => (
+    <svg class={sizeClass} fill="#e5e7eb" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.921 0 1.325 1.016.63 1.558l-2.8 2.154a1 1 0 00-.342 1.02l1.07 3.292c.3.921-.755 1.627-1.558.63L10 13.148l-2.8 2.154c-.783.627-1.858-.709-1.558-.63l1.07-3.292a1 1 0 00-.342-1.02L3.6 8.467c-.783-.627-.021-1.558.63-1.558h3.462a1 1 0 00.95-.69l1.07-3.292z"/>
+    </svg>
+  ))}
+  <span class="ml-1 text-sm text-gray-600">{rating}</span>
+</div>

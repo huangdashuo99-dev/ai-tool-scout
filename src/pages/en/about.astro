@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { type Lang, t } from '../../utils/i18n';
+
+const lang: Lang = 'en';
+---
+
+<BaseLayout
+  lang={lang}
+  title={t(lang, 'about.pageTitle')}
+  description={t(lang, 'about.pageDescription')}
+  canonicalUrl={`https://aitoolscout.com/${lang}/about`}
+  currentPath={`/${lang}/about`}
+>
+  <Breadcrumb lang={lang} crumbs={[
+    { label: t(lang, 'breadcrumb.home'), href: '/' },
+    { label: t(lang, 'breadcrumb.about') },
+  ]} />
+
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8 prose prose-lg">
+    <h1>About AI Tool Scout</h1>
+    <p>AI Tool Scout is an independent review site that helps you discover, compare, and choose the best AI tools for your needs.</p>
+
+    <h2>Our Mission</h2>
+    <p>The AI tool landscape is growing at an incredible pace. New tools launch every day, and it's hard to know which ones are worth your time and money. We cut through the noise with honest, hands-on reviews.</p>
+
+    <h2>How We Review</h2>
+    <p>Every tool on this site has been personally tested. We evaluate tools based on:</p>
+    <ul>
+      <li><strong>Quality</strong> — Does the tool deliver on its promises?</li>
+      <li><strong>Usability</strong> — Is it easy to get started and use?</li>
+      <li><strong>Value</strong> — Is the pricing fair for what you get?</li>
+      <li><strong>Support</strong> — Is there good documentation and help?</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Have a tool you'd like us to review? Found an error in a review? Reach out at <strong>hello@aitoolscout.com</strong>.</p>
+
+    <h2>Sponsorships</h2>
+    <p>We accept sponsorships for featured placement, but sponsorship does not influence our ratings or reviews. All reviews reflect our honest assessment.</p>
+  </article>
+</BaseLayout>

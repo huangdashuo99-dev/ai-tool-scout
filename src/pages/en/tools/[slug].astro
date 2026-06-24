@@ -1,0 +1,22 @@
+---
+import ToolLayout from '../../../layouts/ToolLayout.astro';
+import { getCollection, render } from 'astro:content';
+import { type Lang } from '../../../utils/i18n';
+
+const lang: Lang = 'en';
+
+export async function getStaticPaths() {
+  const tools = await getCollection('tools');
+  return tools.map((tool) => ({
+    params: { slug: tool.slug },
+    props: { tool },
+  }));
+}
+
+const { tool } = Astro.props;
+const { Content } = await render(tool);
+---
+
+<ToolLayout tool={tool} lang={lang}>
+  <Content />
+</ToolLayout>

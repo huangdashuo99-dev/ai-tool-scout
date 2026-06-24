@@ -1,0 +1,35 @@
+---
+import { type Lang, t } from '../utils/i18n';
+
+interface Props {
+  lang: Lang;
+  currentCategory?: string;
+  currentPricing?: string;
+  currentSort?: string;
+  categories: Array<{ slug: string; title: string; icon: string }>;
+}
+
+const { lang, currentCategory = '', currentPricing = '', currentSort = 'rating', categories } = Astro.props;
+---
+
+<div class="flex flex-wrap items-center gap-3 mb-6">
+  <select id="filter-category" class="px-3 py-2 border border-gray-200 rounded-lg text-sm bg-white" data-filter="category">
+    <option value="" selected={!currentCategory}>{t(lang, 'tools.allCategories')}</option>
+    {categories.map((cat) => (
+      <option value={cat.slug} selected={currentCategory === cat.slug}>{cat.icon} {cat.title}</option>
+    ))}
+  </select>
+
+  <select id="filter-pricing" class="px-3 py-2 border border-gray-200 rounded-lg text-sm bg-white" data-filter="pricing">
+    <option value="" selected={!currentPricing}>{t(lang, 'tools.allPricing')}</option>
+    <option value="free" selected={currentPricing === 'free'}>{t(lang, 'pricing.free')}</option>
+    <option value="freemium" selected={currentPricing === 'freemium'}>{t(lang, 'pricing.freemium')}</option>
+    <option value="paid" selected={currentPricing === 'paid'}>{t(lang, 'pricing.paid')}</option>
+  </select>
+
+  <select id="filter-sort" class="px-3 py-2 border border-gray-200 rounded-lg text-sm bg-white" data-filter="sort">
+    <option value="rating" selected={currentSort === 'rating'}>{t(lang, 'tools.topRated')}</option>
+    <option value="newest" selected={currentSort === 'newest'}>{t(lang, 'tools.newest')}</option>
+    <option value="name" selected={currentSort === 'name'}>{t(lang, 'tools.az')}</option>
+  </select>
+</div>

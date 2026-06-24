@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import CompareTable from '../../components/CompareTable.astro';
+import { getCollection } from 'astro:content';
+import { type Lang, t } from '../../utils/i18n';
+
+const lang: Lang = 'en';
+
+const allTools = await getCollection('tools');
+const sortedTools = [...allTools].sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const defaultCompareSlugs = ['chatgpt', 'midjourney', 'github-copilot'];
+const defaultTools = defaultCompareSlugs
+  .map((slug) => allTools.find((t) => t.slug === slug))
+  .filter(Boolean);
+---
+
+<BaseLayout
+  lang={lang}
+  title={t(lang, 'compare.pageTitle')}
+  description={t(lang, 'compare.pageSubtitle')}
+  canonicalUrl={`https://aitoolscout.com/${lang}/compare`}
+  currentPath={`/${lang}/compare`}
+>
+  <Breadcrumb lang={lang} crumbs={[
+    { label: t(lang, 'breadcrumb.home'), href: '/' },
+    { label: t(lang, 'breadcrumb.compare') },
+  ]} />
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <h1 class="text-3xl font-bold text-gray-900">⚖️ {t(lang, 'compare.pageTitle')}</h1>
+    <p class="mt-2 text-gray-600">{t(lang, 'compare.pageSubtitle')}</p>
+
+    <div class="mt-6 flex flex-wrap gap-3" id="compare-selector">
+      {sortedTools.map((tool) => (
+        <label class="flex items-center gap-2 px-3 py-2 border border-gray-200 rounded-lg cursor-pointer hover:border-primary-300 transition-colors has-[:checked]:border-primary-500 has-[:checked]:bg-primary-50">
+          <input type="checkbox" value={tool.slug} class="compare-checkbox accent-primary-600" />
+          <img src={tool.data.logo} alt={tool.data.title} class="w-6 h-6 rounded" />
+          <span class="text-sm">{tool.data.title}</span>
+        </label>
+      ))}
+    </div>
+
+    <div class="mt-8" id="compare-result">
+      {defaultTools.length >= 2 && <CompareTable tools={defaultTools.filter(Boolean) as any} lang={lang} />}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content';
+import { type Lang, t } from '../utils/i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const categories = await getCollection('categories');
+const sortedCategories = categories.sort((a, b) => a.data.order - b.data.order);
+---
+
+<footer class="bg-gray-900 text-gray-300 mt-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">AI Tool Scout</h3>
+        <p class="text-sm">{t(lang, 'footer.description')}</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">{t(lang, 'footer.categories')}</h4>
+        <ul class="space-y-2 text-sm">
+          {sortedCategories.map((cat) => (
+            <li><a href={`/${lang}/categories/${cat.slug}`} class="hover:text-white transition-colors">{cat.data.title}</a></li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">{t(lang, 'footer.resources')}</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href={`/${lang}/rankings`} class="hover:text-white transition-colors">{t(lang, 'nav.rankings')}</a></li>
+          <li><a href={`/${lang}/compare`} class="hover:text-white transition-colors">{t(lang, 'nav.compare')}</a></li>
+          <li><a href={`/${lang}/about`} class="hover:text-white transition-colors">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">{t(lang, 'footer.legal')}</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href={`/${lang}/privacy`} class="hover:text-white transition-colors">{t(lang, 'footer.privacyPolicy')}</a></li>
+          <li><a href={`/${lang}/affiliate-disclosure`} class="hover:text-white transition-colors">{t(lang, 'footer.affiliateDisclosure')}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-8 pt-8 border-t border-gray-700 text-sm text-center">
+      <p>&copy; {new Date().getFullYear()} {t(lang, 'footer.copyright')}</p>
+      <p class="mt-1 text-gray-500">{t(lang, 'footer.affiliateNotice')}</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,19 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { type Lang, t } from '../utils/i18n';
+
+interface Props {
+  scenario: CollectionEntry<'scenarios'>;
+  lang: Lang;
+}
+
+const { scenario, lang } = Astro.props;
+const { data } = scenario;
+---
+
+<a href={`/${lang}/scenarios/${scenario.slug}`} class="block group p-5 border border-gray-200 rounded-xl hover:border-primary-300 hover:shadow-md transition-all">
+  <span class="text-2xl">{data.icon}</span>
+  <h3 class="mt-2 font-semibold text-gray-900 group-hover:text-primary-600 transition-colors">{data.title}</h3>
+  <p class="mt-1 text-sm text-gray-500 line-clamp-2">{data.description}</p>
+  <span class="mt-2 inline-block text-xs text-primary-600 font-medium">{data.tools.length} {t(lang, 'scenarios.toolsCount')}</span>
+</a>

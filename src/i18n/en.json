@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "allTools": "All Tools",
+    "categories": "Categories",
+    "scenarios": "Scenarios",
+    "rankings": "Rankings",
+    "compare": "Compare",
+    "menu": "Menu"
+  },
+  "home": {
+    "heroTitle1": "Discover the Best",
+    "heroTitle2": "AI Tools",
+    "heroSubtitle": "Find, compare, and choose the AI tools that fit your needs. Honest reviews, up-to-date rankings, and scenario-based recommendations.",
+    "topTools": "Top 10 AI Tools",
+    "viewAllRankings": "View all rankings →",
+    "whatDoYouWant": "What do you want to do?",
+    "newThisWeek": "New This Week",
+    "browseByCategory": "Browse by Category"
+  },
+  "tools": {
+    "pageTitle": "All AI Tools",
+    "pageSubtitle": "tools reviewed and counting",
+    "allCategories": "All Categories",
+    "allPricing": "All Pricing",
+    "topRated": "Top Rated",
+    "newest": "Newest",
+    "az": "A-Z",
+    "new": "New"
+  },
+  "toolDetail": {
+    "visit": "Visit",
+    "sponsoredLink": "Sponsored link",
+    "alternatives": "Alternatives to",
+    "faq": "Frequently Asked Questions",
+    "from": "From"
+  },
+  "rankings": {
+    "pageTitle": "AI Tool Rankings",
+    "pageSubtitle": "Tools ranked by our expert rating. Ties broken by most recently added.",
+    "all": "All"
+  },
+  "compare": {
+    "pageTitle": "Compare AI Tools",
+    "pageSubtitle": "Select 2-3 tools to compare side by side.",
+    "feature": "Feature",
+    "logo": "Logo",
+    "rating": "Rating",
+    "pricing": "Pricing",
+    "category": "Category",
+    "tags": "Tags",
+    "visit": "Visit →"
+  },
+  "scenarios": {
+    "toolsCount": "tools →"
+  },
+  "footer": {
+    "description": "Discover, compare, and choose the best AI tools for your needs.",
+    "categories": "Categories",
+    "resources": "Resources",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "affiliateDisclosure": "Affiliate Disclosure",
+    "copyright": "AI Tool Scout. All rights reserved.",
+    "affiliateNotice": "Some links on this site are affiliate links. We may earn a commission at no extra cost to you."
+  },
+  "cookie": {
+    "message": "We use cookies for analytics and to improve your experience. By continuing to use this site, you agree to our",
+    "privacyPolicy": "Privacy Policy",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "pricing": {
+    "free": "Free",
+    "freemium": "Freemium",
+    "paid": "Paid"
+  },
+  "common": {
+    "tools": "tools",
+    "toolsCount": "tools →"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "allTools": "All Tools",
+    "rankings": "Rankings",
+    "compare": "Compare",
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "affiliateDisclosure": "Affiliate Disclosure",
+    "scenarios": "Scenarios",
+    "categories": "Categories"
+  },
+  "about": {
+    "pageTitle": "About",
+    "pageDescription": "AI Tool Scout helps you discover, compare, and choose the best AI tools. Learn about our mission and how we review tools."
+  },
+  "privacy": {
+    "pageTitle": "Privacy Policy",
+    "pageDescription": "Privacy Policy for AI Tool Scout. Learn how we handle your data and cookies."
+  },
+  "affiliate": {
+    "pageTitle": "Affiliate Disclosure",
+    "pageDescription": "Affiliate disclosure for AI Tool Scout. Transparency about how we earn revenue from affiliate links and sponsorships."
+  },
+  "lang": {
+    "en": "EN",
+    "zh": "中文"
+  }
+}
