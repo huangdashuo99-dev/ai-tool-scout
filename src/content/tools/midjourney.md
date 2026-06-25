@@ -12,7 +12,7 @@ rating: 4.7
 affiliateUrl: "https://midjourney.com"
 affiliateNetwork: "direct"
 officialUrl: "https://midjourney.com"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=midjourney.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: true
 isNew: false

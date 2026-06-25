@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://fireflies.ai"
 affiliateNetwork: "direct"
 officialUrl: "https://fireflies.ai"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=fireflies.ai&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

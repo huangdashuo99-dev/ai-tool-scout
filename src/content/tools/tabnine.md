@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://tabnine.com"
 affiliateNetwork: "direct"
 officialUrl: "https://tabnine.com"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=tabnine.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

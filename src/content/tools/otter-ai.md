@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://otter.ai"
 affiliateNetwork: "direct"
 officialUrl: "https://otter.ai"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=otter.ai&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

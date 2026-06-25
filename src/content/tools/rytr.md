@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://rytr.me"
 affiliateNetwork: "direct"
 officialUrl: "https://rytr.me"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=rytr.me&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

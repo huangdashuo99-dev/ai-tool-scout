@@ -12,7 +12,7 @@ rating: 4.4
 affiliateUrl: "https://github.com/features/copilot"
 affiliateNetwork: "direct"
 officialUrl: "https://github.com/features/copilot"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=github.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: true
 isNew: false

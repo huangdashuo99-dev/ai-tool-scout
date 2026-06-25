@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://mem.ai"
 affiliateNetwork: "direct"
 officialUrl: "https://mem.ai"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=mem.ai&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

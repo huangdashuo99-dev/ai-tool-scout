@@ -12,7 +12,7 @@ rating: 4.1
 affiliateUrl: "https://grammarly.com"
 affiliateNetwork: "direct"
 officialUrl: "https://grammarly.com"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=grammarly.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

@@ -12,7 +12,7 @@ rating: 4.5
 affiliateUrl: "https://openai.com/chatgpt"
 affiliateNetwork: "direct"
 officialUrl: "https://openai.com/chatgpt"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=openai.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: true
 isNew: false

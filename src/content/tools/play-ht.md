@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://play.ht"
 affiliateNetwork: "direct"
 officialUrl: "https://play.ht"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=play.ht&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

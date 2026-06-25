@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://surferseo.com"
 affiliateNetwork: "direct"
 officialUrl: "https://surferseo.com"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=surferseo.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

@@ -12,7 +12,7 @@ rating: 4.3
 affiliateUrl: "https://codeium.com"
 affiliateNetwork: "direct"
 officialUrl: "https://codeium.com"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=codeium.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 alternatives: ["github-copilot", "cursor", "tabnine"]

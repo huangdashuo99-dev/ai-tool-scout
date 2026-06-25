@@ -12,7 +12,7 @@ rating: 4.0
 affiliateUrl: "https://jasper.ai"
 affiliateNetwork: "direct"
 officialUrl: "https://jasper.ai"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=jasper.ai&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

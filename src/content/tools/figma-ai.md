@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://figma.com"
 affiliateNetwork: "direct"
 officialUrl: "https://figma.com"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=figma.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

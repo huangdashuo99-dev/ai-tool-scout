@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://murf.ai"
 affiliateNetwork: "direct"
 officialUrl: "https://murf.ai"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=murf.ai&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

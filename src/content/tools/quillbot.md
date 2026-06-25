@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://quillbot.com"
 affiliateNetwork: "direct"
 officialUrl: "https://quillbot.com"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=quillbot.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

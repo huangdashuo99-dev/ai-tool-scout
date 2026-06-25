@@ -12,7 +12,7 @@ rating: 4.4
 affiliateUrl: "https://pika.art"
 affiliateNetwork: "direct"
 officialUrl: "https://pika.art"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=pika.art&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 alternatives: ["runway", "stable-video", "synthesia"]

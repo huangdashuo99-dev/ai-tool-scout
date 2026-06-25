@@ -12,7 +12,7 @@ rating: 4.2
 affiliateUrl: "https://copy.ai"
 affiliateNetwork: "direct"
 officialUrl: "https://copy.ai"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=copy.ai&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 alternatives: ["jasper", "writesonic", "chatgpt"]

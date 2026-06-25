@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://capcut.com"
 affiliateNetwork: "direct"
 officialUrl: "https://capcut.com"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=capcut.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

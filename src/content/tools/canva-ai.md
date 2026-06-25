@@ -12,7 +12,7 @@ rating: 4.5
 affiliateUrl: "https://canva.com"
 affiliateNetwork: "direct"
 officialUrl: "https://canva.com"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=canva.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: true
 alternatives: ["adobe-firefly", "figma", "midjourney"]

@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://sourcegraph.com/cody"
 affiliateNetwork: "direct"
 officialUrl: "https://sourcegraph.com/cody"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=sourcegraph.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

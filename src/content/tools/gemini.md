@@ -12,7 +12,7 @@ rating: 4.5
 affiliateUrl: "https://gemini.google.com"
 affiliateNetwork: "direct"
 officialUrl: "https://gemini.google.com"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=gemini.google.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: true
 alternatives: ["chatgpt", "claude", "perplexity"]

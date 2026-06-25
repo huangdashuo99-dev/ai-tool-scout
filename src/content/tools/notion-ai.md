@@ -12,7 +12,7 @@ rating: 4.2
 affiliateUrl: "https://notion.so"
 affiliateNetwork: "direct"
 officialUrl: "https://notion.so"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=notion.so&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

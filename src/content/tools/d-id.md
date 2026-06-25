@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://d-id.com"
 affiliateNetwork: "direct"
 officialUrl: "https://d-id.com"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=d-id.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

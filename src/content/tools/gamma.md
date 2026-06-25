@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://gamma.app"
 affiliateNetwork: "direct"
 officialUrl: "https://gamma.app"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=gamma.app&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

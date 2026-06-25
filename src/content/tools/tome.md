@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://tome.app"
 affiliateNetwork: "direct"
 officialUrl: "https://tome.app"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=tome.app&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

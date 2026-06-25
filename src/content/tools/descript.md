@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://descript.com"
 affiliateNetwork: "direct"
 officialUrl: "https://descript.com"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=descript.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

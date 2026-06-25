@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://framer.com"
 affiliateNetwork: "direct"
 officialUrl: "https://framer.com"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=framer.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

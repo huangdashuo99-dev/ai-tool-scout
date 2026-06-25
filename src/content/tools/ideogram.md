@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://ideogram.ai"
 affiliateNetwork: "direct"
 officialUrl: "https://ideogram.ai"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=ideogram.ai&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

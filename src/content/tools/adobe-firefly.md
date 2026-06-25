@@ -12,7 +12,7 @@ rating: 4.4
 affiliateUrl: "https://firefly.adobe.com"
 affiliateNetwork: "direct"
 officialUrl: "https://firefly.adobe.com"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=firefly.adobe.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 alternatives: ["midjourney", "dalle", "stable-diffusion"]

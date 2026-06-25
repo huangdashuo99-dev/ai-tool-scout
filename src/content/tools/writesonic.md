@@ -12,7 +12,7 @@ rating: 4.3
 affiliateUrl: "https://writesonic.com"
 affiliateNetwork: "direct"
 officialUrl: "https://writesonic.com"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=writesonic.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 alternatives: ["jasper", "copy-ai", "chatgpt"]

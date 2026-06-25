@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://uizard.io"
 affiliateNetwork: "direct"
 officialUrl: "https://uizard.io"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=uizard.io&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

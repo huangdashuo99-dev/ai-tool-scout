@@ -12,7 +12,7 @@ rating: 4.5
 affiliateUrl: "https://stability.ai"
 affiliateNetwork: "direct"
 officialUrl: "https://stability.ai"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=stability.ai&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: true
 alternatives: ["midjourney", "dalle", "adobe-firefly"]

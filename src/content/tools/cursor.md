@@ -12,7 +12,7 @@ rating: 4.6
 affiliateUrl: "https://cursor.sh"
 affiliateNetwork: "direct"
 officialUrl: "https://cursor.sh"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=cursor.sh&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: true
 isNew: true

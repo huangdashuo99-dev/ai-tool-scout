@@ -12,7 +12,7 @@ rating: 4.4
 affiliateUrl: "https://replit.com"
 affiliateNetwork: "direct"
 officialUrl: "https://replit.com"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=replit.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 alternatives: ["cursor", "github-copilot", "codeium"]

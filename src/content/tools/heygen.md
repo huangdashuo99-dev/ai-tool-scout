@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://heygen.com"
 affiliateNetwork: "direct"
 officialUrl: "https://heygen.com"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=heygen.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

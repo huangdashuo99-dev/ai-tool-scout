@@ -12,7 +12,7 @@ rating: 4.3
 affiliateUrl: "https://openai.com/dall-e"
 affiliateNetwork: "direct"
 officialUrl: "https://openai.com/dall-e"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=openai.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

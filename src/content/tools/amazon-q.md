@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://aws.amazon.com/q/"
 affiliateNetwork: "direct"
 officialUrl: "https://aws.amazon.com/q/"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false

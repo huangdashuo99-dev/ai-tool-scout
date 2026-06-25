@@ -12,7 +12,7 @@ rating: 4.6
 affiliateUrl: "https://perplexity.ai"
 affiliateNetwork: "direct"
 officialUrl: "https://perplexity.ai"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: true
 alternatives: ["chatgpt", "claude", "gemini"]

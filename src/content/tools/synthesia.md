@@ -12,7 +12,7 @@ rating: null
 affiliateUrl: "https://synthesia.io"
 affiliateNetwork: "direct"
 officialUrl: "https://synthesia.io"
-logo: "/logos/placeholder.svg"
+logo: "https://www.google.com/s2/favicons?domain=synthesia.io&sz=128"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
 isNew: false
