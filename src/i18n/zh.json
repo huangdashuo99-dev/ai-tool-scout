@@ -15,7 +15,8 @@
     "viewAllRankings": "查看完整排行 →",
     "whatDoYouWant": "你想做什么？",
     "newThisWeek": "本周新工具",
-    "browseByCategory": "按分类浏览"
+    "browseByCategory": "按分类浏览",
+    "hotTags": ["写作", "图像生成", "编程", "免费", "聊天机器人", "视频"]
   },
   "tools": {
     "pageTitle": "全部 AI 工具",

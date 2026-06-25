@@ -15,7 +15,8 @@
     "viewAllRankings": "View all rankings →",
     "whatDoYouWant": "What do you want to do?",
     "newThisWeek": "New This Week",
-    "browseByCategory": "Browse by Category"
+    "browseByCategory": "Browse by Category",
+    "hotTags": ["writing", "image generation", "coding", "free", "chatbot", "video"]
   },
   "tools": {
     "pageTitle": "All AI Tools",
