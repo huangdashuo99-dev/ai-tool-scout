@@ -23,7 +23,7 @@ const sortedCategories = categories.sort((a, b) => a.data.order - b.data.order);
         <h4 class="text-white font-semibold mb-4">{t(lang, 'footer.categories')}</h4>
         <ul class="space-y-2 text-sm">
           {sortedCategories.map((cat) => (
-            <li><a href={`/${lang}/categories/${cat.slug}`} class="hover:text-white transition-colors">{cat.data.title}</a></li>
+            <li><a href={`/${lang}/categories/${cat.slug}`} class="hover:text-white transition-colors">{(lang === 'zh' && cat.data.titleZh) ? cat.data.titleZh : cat.data.title}</a></li>
           ))}
         </ul>
       </div>

@@ -36,8 +36,10 @@ const categories = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
+    titleZh: z.string().optional(),
     icon: z.string(),
     description: z.string(),
+    descriptionZh: z.string().optional(),
     order: z.number(),
   }),
 });
@@ -46,8 +48,10 @@ const scenarios = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
+    titleZh: z.string().optional(),
     icon: z.string(),
     description: z.string(),
+    descriptionZh: z.string().optional(),
     tools: z.array(z.string()),
   }),
 });

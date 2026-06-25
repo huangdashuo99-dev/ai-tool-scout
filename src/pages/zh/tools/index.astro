@@ -14,7 +14,7 @@ const sortedCategories = categories.sort((a, b) => a.data.order - b.data.order);
 
 const categoryOptions = sortedCategories.map((c) => ({
   slug: c.slug,
-  title: c.data.title,
+  title: (lang === 'zh' && c.data.titleZh) ? c.data.titleZh : c.data.title,
   icon: c.data.icon,
 }));
 

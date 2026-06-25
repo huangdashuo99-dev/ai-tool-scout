@@ -18,6 +18,9 @@ export async function getStaticPaths() {
 const { category } = Astro.props;
 const { data: catData } = category;
 
+const title = (lang === 'zh' && catData.titleZh) ? catData.titleZh : catData.title;
+const description = (lang === 'zh' && catData.descriptionZh) ? catData.descriptionZh : catData.description;
+
 const allTools = await getCollection('tools');
 const categoryTools = allTools
   .filter((t) => t.data.category === category.slug)
@@ -26,20 +29,20 @@ const categoryTools = allTools
 
 <BaseLayout
   lang={lang}
-  title={`${catData.icon} ${catData.title} AI Tools`}
-  description={catData.description}
+  title={`${catData.icon} ${title} AI Tools`}
+  description={description}
   canonicalUrl={`https://aitoolscout.com/${lang}/categories/${category.slug}`}
   currentPath={`/${lang}/categories/${category.slug}`}
 >
   <Breadcrumb lang={lang} crumbs={[
     { label: t(lang, 'breadcrumb.home'), href: '/' },
     { label: t(lang, 'breadcrumb.allTools'), href: '/tools' },
-    { label: catData.title },
+    { label: title },
   ]} />
 
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <h1 class="text-3xl font-bold text-gray-900">{catData.icon} {catData.title}</h1>
-    <p class="mt-2 text-gray-600">{catData.description}</p>
+    <h1 class="text-3xl font-bold text-gray-900">{catData.icon} {title}</h1>
+    <p class="mt-2 text-gray-600">{description}</p>
     <p class="mt-1 text-sm text-gray-400">{categoryTools.length} {t(lang, 'common.tools')}</p>
 
     <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

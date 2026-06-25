@@ -11,12 +11,14 @@ interface Props {
 const { category, lang } = Astro.props;
 const { data } = category;
 
+const title = (lang === 'zh' && data.titleZh) ? data.titleZh : data.title;
+
 const allTools = await getCollection('tools');
 const toolCount = allTools.filter((t) => t.data.category === category.slug).length;
 ---
 
 <a href={`/${lang}/categories/${category.slug}`} class="block group p-6 border border-gray-200 rounded-xl hover:border-primary-300 hover:shadow-md transition-all text-center">
   <span class="text-4xl">{data.icon}</span>
-  <h3 class="mt-3 font-semibold text-gray-900 group-hover:text-primary-600 transition-colors">{data.title}</h3>
+  <h3 class="mt-3 font-semibold text-gray-900 group-hover:text-primary-600 transition-colors">{title}</h3>
   <p class="mt-1 text-sm text-gray-500">{toolCount} {t(lang, 'common.tools')}</p>
 </a>

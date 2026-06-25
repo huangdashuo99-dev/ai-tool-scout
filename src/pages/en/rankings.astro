@@ -36,7 +36,7 @@ const rankedTools = [...allTools].sort(
       <a href={`/${lang}/rankings`} class="px-4 py-2 bg-primary-600 text-white rounded-lg text-sm font-medium">{t(lang, 'rankings.all')}</a>
       {sortedCategories.map((cat) => (
         <a href={`/${lang}/categories/${cat.slug}`} class="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg text-sm font-medium transition-colors">
-          {cat.data.icon} {cat.data.title}
+          {cat.data.icon} {(lang === 'zh' && cat.data.titleZh) ? cat.data.titleZh : cat.data.title}
         </a>
       ))}
     </div>

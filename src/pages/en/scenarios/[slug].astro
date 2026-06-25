@@ -18,6 +18,9 @@ export async function getStaticPaths() {
 const { scenario } = Astro.props;
 const { data: scenData } = scenario;
 
+const title = (lang === 'zh' && scenData.titleZh) ? scenData.titleZh : scenData.title;
+const description = (lang === 'zh' && scenData.descriptionZh) ? scenData.descriptionZh : scenData.description;
+
 const allTools = await getCollection('tools');
 const scenarioTools = scenData.tools
   .map((slug) => allTools.find((t) => t.slug === slug))
@@ -27,20 +30,20 @@ const scenarioTools = scenData.tools
 
 <BaseLayout
   lang={lang}
-  title={scenData.title}
-  description={scenData.description}
+  title={title}
+  description={description}
   canonicalUrl={`https://aitoolscout.com/${lang}/scenarios/${scenario.slug}`}
   currentPath={`/${lang}/scenarios/${scenario.slug}`}
 >
   <Breadcrumb lang={lang} crumbs={[
     { label: t(lang, 'breadcrumb.home'), href: '/' },
     { label: t(lang, 'breadcrumb.scenarios') },
-    { label: scenData.title },
+    { label: title },
   ]} />
 
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <h1 class="text-3xl font-bold text-gray-900">{scenData.icon} {scenData.title}</h1>
-    <p class="mt-2 text-lg text-gray-600">{scenData.description}</p>
+    <h1 class="text-3xl font-bold text-gray-900">{scenData.icon} {title}</h1>
+    <p class="mt-2 text-lg text-gray-600">{description}</p>
 
     <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {scenarioTools.map((tool) => tool && <ToolCard tool={tool} lang={lang} />)}

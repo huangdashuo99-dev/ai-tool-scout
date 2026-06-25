@@ -39,7 +39,7 @@ const otherLang: Lang = lang === 'en' ? 'zh' : 'en';
           <div class="absolute top-full left-0 mt-1 w-48 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all" data-dropdown-menu>
             {sortedCategories.map((cat) => (
               <a href={`/${lang}/categories/${cat.slug}`} class="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600">
-                {cat.data.icon} {cat.data.title}
+                {cat.data.icon} {(lang === 'zh' && cat.data.titleZh) ? cat.data.titleZh : cat.data.title}
               </a>
             ))}
           </div>
@@ -54,7 +54,7 @@ const otherLang: Lang = lang === 'en' ? 'zh' : 'en';
           <div class="absolute top-full left-0 mt-1 w-56 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all" data-dropdown-menu>
             {scenarios.map((s) => (
               <a href={`/${lang}/scenarios/${s.slug}`} class="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600">
-                {s.data.icon} {s.data.title}
+                {s.data.icon} {(lang === 'zh' && s.data.titleZh) ? s.data.titleZh : s.data.title}
               </a>
             ))}
           </div>
@@ -93,12 +93,12 @@ const otherLang: Lang = lang === 'en' ? 'zh' : 'en';
       <a href={`/${lang}/tools`} class="block py-2 text-gray-600">{t(lang, 'nav.allTools')}</a>
       {sortedCategories.map((cat) => (
         <a href={`/${lang}/categories/${cat.slug}`} class="block py-2 text-gray-600 pl-4">
-          {cat.data.icon} {cat.data.title}
+          {cat.data.icon} {(lang === 'zh' && cat.data.titleZh) ? cat.data.titleZh : cat.data.title}
         </a>
       ))}
       {scenarios.map((s) => (
         <a href={`/${lang}/scenarios/${s.slug}`} class="block py-2 text-gray-600 pl-4">
-          {s.data.icon} {s.data.title}
+          {s.data.icon} {(lang === 'zh' && s.data.titleZh) ? s.data.titleZh : s.data.title}
         </a>
       ))}
       <a href={`/${lang}/rankings`} class="block py-2 text-gray-600">{t(lang, 'nav.rankings')}</a>

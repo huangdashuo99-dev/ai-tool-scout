@@ -9,11 +9,14 @@ interface Props {
 
 const { scenario, lang } = Astro.props;
 const { data } = scenario;
+
+const title = (lang === 'zh' && data.titleZh) ? data.titleZh : data.title;
+const description = (lang === 'zh' && data.descriptionZh) ? data.descriptionZh : data.description;
 ---
 
 <a href={`/${lang}/scenarios/${scenario.slug}`} class="block group p-5 border border-gray-200 rounded-xl hover:border-primary-300 hover:shadow-md transition-all">
   <span class="text-2xl">{data.icon}</span>
-  <h3 class="mt-2 font-semibold text-gray-900 group-hover:text-primary-600 transition-colors">{data.title}</h3>
-  <p class="mt-1 text-sm text-gray-500 line-clamp-2">{data.description}</p>
+  <h3 class="mt-2 font-semibold text-gray-900 group-hover:text-primary-600 transition-colors">{title}</h3>
+  <p class="mt-1 text-sm text-gray-500 line-clamp-2">{description}</p>
   <span class="mt-2 inline-block text-xs text-primary-600 font-medium">{data.tools.length} {t(lang, 'scenarios.toolsCount')}</span>
 </a>
