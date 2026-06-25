@@ -39,7 +39,10 @@
       "Bash(curl -s --connect-timeout 10 -x http://127.0.0.1:7897 \"https://vercel.com/huangdashuo99-1783s-projects/ai-tool-scout/settings/domains\")",
       "Bash(grep -oiE '[a-zA-Z0-9][-a-zA-Z0-9]*\\\\.[a-zA-Z]{2,}[^\"<> ]*vercel[^\"<> ]*')",
       "Bash(curl -s --connect-timeout 10 -x http://127.0.0.1:7897 https://project-7gzs3.vercel.app/)",
-      "Bash(curl -s --connect-timeout 10 -x http://127.0.0.1:7897 https://project-7gzs3.vercel.app/en/tools/chatgpt/)"
+      "Bash(curl -s --connect-timeout 10 -x http://127.0.0.1:7897 https://project-7gzs3.vercel.app/en/tools/chatgpt/)",
+      "Bash(npm run *)",
+      "Bash(sed -i \"s|from '../../|from '../|g\" about.astro affiliate-disclosure.astro compare.astro index.astro privacy.astro rankings.astro)",
+      "Bash(sed -i \"s|from '../../../|from '../../|g\" tools/index.astro \"tools/[slug].astro\" \"categories/[slug].astro\" \"scenarios/[slug].astro\")"
     ]
   }
 }

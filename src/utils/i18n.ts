@@ -33,10 +33,32 @@ export function getLangFromUrl(url: URL): Lang {
 
 export function switchLangPath(pathname: string, targetLang: Lang): string {
   const parts = pathname.split('/').filter(Boolean);
+  // Remove existing language prefix if present
   if (parts[0] === 'en' || parts[0] === 'zh') {
-    parts[0] = targetLang;
-  } else {
+    parts.shift();
+  }
+  // Add prefix only for non-default locales
+  if (targetLang !== defaultLang) {
     parts.unshift(targetLang);
   }
-  return '/' + parts.join('/');
+  return '/' + parts.join('/') || '/';
+}
+
+/** Get the URL path prefix for a language: '/' for default locale, '/zh/' otherwise */
+export function langPathPrefix(lang: Lang): string {
+  return lang === defaultLang ? '/' : `/${lang}/`;
+}
+
+/** Get the full URL for a given language, handling prefixDefaultLocale: false */
+export function getLangUrl(url: string, targetLang: Lang): string {
+  const u = new URL(url);
+  let path = u.pathname;
+  // Strip existing language prefix
+  path = path.replace(/^\/(en|zh)(\/|$)/, '/');
+  // Add target language prefix if not default
+  if (targetLang !== defaultLang) {
+    path = '/' + targetLang + (path === '/' ? '' : path);
+  }
+  u.pathname = path || '/';
+  return u.toString();
 }

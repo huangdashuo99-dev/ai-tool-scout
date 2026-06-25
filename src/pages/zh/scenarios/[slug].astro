@@ -3,7 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import ToolCard from '../../../components/ToolCard.astro';
 import Breadcrumb from '../../../components/Breadcrumb.astro';
 import { getCollection } from 'astro:content';
-import { type Lang, t } from '../../../utils/i18n';
+import { type Lang, t, langPathPrefix } from '../../../utils/i18n';
 
 const lang: Lang = 'zh';
 
@@ -32,8 +32,8 @@ const scenarioTools = scenData.tools
   lang={lang}
   title={title}
   description={description}
-  canonicalUrl={`https://aitoolscout.com/${lang}/scenarios/${scenario.slug}`}
-  currentPath={`/${lang}/scenarios/${scenario.slug}`}
+  canonicalUrl={`https://aitoolscout.com${langPathPrefix(lang)}scenarios/${scenario.slug}`}
+  currentPath={`${langPathPrefix(lang)}scenarios/${scenario.slug}`}
 >
   <Breadcrumb lang={lang} crumbs={[
     { label: t(lang, 'breadcrumb.home'), href: '/' },

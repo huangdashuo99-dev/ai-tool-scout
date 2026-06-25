@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
-import { type Lang, t } from '../../utils/i18n';
+import { type Lang, t, langPathPrefix } from '../../utils/i18n';
 
 const lang: Lang = 'zh';
 ---
@@ -10,8 +10,8 @@ const lang: Lang = 'zh';
   lang={lang}
   title={t(lang, 'about.pageTitle')}
   description={t(lang, 'about.pageDescription')}
-  canonicalUrl={`https://aitoolscout.com/${lang}/about`}
-  currentPath={`/${lang}/about`}
+  canonicalUrl={`https://aitoolscout.com${langPathPrefix(lang)}about`}
+  currentPath={`${langPathPrefix(lang)}about`}
 >
   <Breadcrumb lang={lang} crumbs={[
     { label: t(lang, 'breadcrumb.home'), href: '/' },

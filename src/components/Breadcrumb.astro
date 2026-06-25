@@ -1,5 +1,5 @@
 ---
-import { type Lang } from '../utils/i18n';
+import { type Lang, langPathPrefix } from '../utils/i18n';
 
 interface Crumb {
   label: string;
@@ -14,8 +14,8 @@ interface Props {
 const { crumbs, lang } = Astro.props;
 
 function prefixHref(href: string): string {
-  if (href === '/') return `/${lang}/`;
-  return `/${lang}${href}`;
+  if (href === '/') return langPathPrefix(lang);
+  return `${langPathPrefix(lang)}${href.slice(1)}`;
 }
 ---
 

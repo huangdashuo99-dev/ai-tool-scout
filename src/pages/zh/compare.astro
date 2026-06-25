@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import CompareTable from '../../components/CompareTable.astro';
 import { getCollection } from 'astro:content';
-import { type Lang, t } from '../../utils/i18n';
+import { type Lang, t, langPathPrefix } from '../../utils/i18n';
 
 const lang: Lang = 'zh';
 
@@ -36,8 +36,8 @@ for (const tool of allTools) {
   lang={lang}
   title={t(lang, 'compare.pageTitle')}
   description={t(lang, 'compare.pageSubtitle')}
-  canonicalUrl={`https://aitoolscout.com/${lang}/compare`}
-  currentPath={`/${lang}/compare`}
+  canonicalUrl={`https://aitoolscout.com${langPathPrefix(lang)}compare`}
+  currentPath={`${langPathPrefix(lang)}compare`}
 >
   <Breadcrumb lang={lang} crumbs={[
     { label: t(lang, 'breadcrumb.home'), href: '/' },

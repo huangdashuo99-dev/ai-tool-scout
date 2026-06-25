@@ -1,7 +1,7 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Breadcrumb from '../../components/Breadcrumb.astro';
-import { type Lang, t } from '../../utils/i18n';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { type Lang, t, langPathPrefix } from '../utils/i18n';
 
 const lang: Lang = 'en';
 ---
@@ -10,8 +10,8 @@ const lang: Lang = 'en';
   lang={lang}
   title={t(lang, 'privacy.pageTitle')}
   description={t(lang, 'privacy.pageDescription')}
-  canonicalUrl={`https://aitoolscout.com/${lang}/privacy`}
-  currentPath={`/${lang}/privacy`}
+  canonicalUrl={`https://aitoolscout.com${langPathPrefix(lang)}privacy`}
+  currentPath={`${langPathPrefix(lang)}privacy`}
 >
   <Breadcrumb lang={lang} crumbs={[
     { label: t(lang, 'breadcrumb.home'), href: '/' },

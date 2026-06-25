@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import ToolCard from '../../components/ToolCard.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import { getCollection } from 'astro:content';
-import { type Lang, t } from '../../utils/i18n';
+import { type Lang, t, langPathPrefix } from '../../utils/i18n';
 
 const lang: Lang = 'zh';
 
@@ -20,8 +20,8 @@ const rankedTools = [...allTools].sort(
   lang={lang}
   title={t(lang, 'rankings.pageTitle')}
   description={t(lang, 'rankings.pageSubtitle')}
-  canonicalUrl={`https://aitoolscout.com/${lang}/rankings`}
-  currentPath={`/${lang}/rankings`}
+  canonicalUrl={`https://aitoolscout.com${langPathPrefix(lang)}rankings`}
+  currentPath={`${langPathPrefix(lang)}rankings`}
 >
   <Breadcrumb lang={lang} crumbs={[
     { label: t(lang, 'breadcrumb.home'), href: '/' },
@@ -33,9 +33,9 @@ const rankedTools = [...allTools].sort(
     <p class="mt-2 text-gray-600">{t(lang, 'rankings.pageSubtitle')}</p>
 
     <div class="mt-6 flex flex-wrap gap-2 mb-8">
-      <a href={`/${lang}/rankings`} class="px-4 py-2 bg-primary-600 text-white rounded-lg text-sm font-medium">{t(lang, 'rankings.all')}</a>
+      <a href={`${langPathPrefix(lang)}rankings`} class="px-4 py-2 bg-primary-600 text-white rounded-lg text-sm font-medium">{t(lang, 'rankings.all')}</a>
       {sortedCategories.map((cat) => (
-        <a href={`/${lang}/categories/${cat.slug}`} class="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg text-sm font-medium transition-colors">
+        <a href={`${langPathPrefix(lang)}categories/${cat.slug}`} class="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg text-sm font-medium transition-colors">
           {cat.data.icon} {(lang === 'zh' && cat.data.titleZh) ? cat.data.titleZh : cat.data.title}
         </a>
       ))}

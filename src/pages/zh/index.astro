@@ -3,9 +3,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import ToolCard from '../../components/ToolCard.astro';
 import CategoryCard from '../../components/CategoryCard.astro';
 import ScenarioCard from '../../components/ScenarioCard.astro';
-import AdSlot from '../../components/AdSlot.astro';
+
 import { getCollection } from 'astro:content';
-import { type Lang, t } from '../../utils/i18n';
+import { type Lang, t, langPathPrefix } from '../../utils/i18n';
 
 const lang: Lang = 'zh';
 const allTools = await getCollection('tools');
@@ -32,8 +32,8 @@ const hotTags = ['写作', '图像生成', '编程', '免费', '聊天机器人'
   lang={lang}
   title={`${t(lang, 'home.heroTitle1')} ${t(lang, 'home.heroTitle2')}`}
   description={t(lang, 'home.heroSubtitle')}
-  canonicalUrl={`https://aitoolscout.com/${lang}/`}
-  currentPath={`/${lang}/`}
+  canonicalUrl={`https://aitoolscout.com${langPathPrefix(lang)}`}
+  currentPath={`${langPathPrefix(lang)}`}
 >
   <section class="bg-gradient-to-br from-primary-50 to-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -57,7 +57,7 @@ const hotTags = ['写作', '图像生成', '编程', '免费', '聊天机器人'
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <div class="flex items-center justify-between mb-6">
       <h2 class="text-2xl font-bold text-gray-900">🏆 {t(lang, 'home.topTools')}</h2>
-      <a href={`/${lang}/rankings`} class="text-primary-600 hover:text-primary-700 font-medium text-sm">{t(lang, 'home.viewAllRankings')}</a>
+      <a href={`${langPathPrefix(lang)}rankings`} class="text-primary-600 hover:text-primary-700 font-medium text-sm">{t(lang, 'home.viewAllRankings')}</a>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {topTools.map((tool, i) => (
@@ -68,8 +68,6 @@ const hotTags = ['写作', '图像生成', '编程', '免费', '聊天机器人'
       ))}
     </div>
   </section>
-
-  <AdSlot position="home-after-rankings" />
 
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <h2 class="text-2xl font-bold text-gray-900 mb-6">🎯 {t(lang, 'home.whatDoYouWant')}</h2>

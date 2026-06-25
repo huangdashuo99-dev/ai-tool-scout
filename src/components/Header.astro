@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import { type Lang, t, switchLangPath } from '../utils/i18n';
+import { type Lang, t, switchLangPath, langPathPrefix } from '../utils/i18n';
 
 interface Props {
   lang: Lang;
@@ -19,7 +19,7 @@ const otherLang: Lang = lang === 'en' ? 'zh' : 'en';
 <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
-      <a href={`/${lang}/`} class="flex items-center gap-2 font-bold text-xl text-primary-600">
+      <a href={`${langPathPrefix(lang)}`} class="flex items-center gap-2 font-bold text-xl text-primary-600">
         <svg class="w-8 h-8" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
           <rect width="32" height="32" rx="6" fill="#2563eb"/>
           <text x="16" y="22" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">S</text>
@@ -28,7 +28,7 @@ const otherLang: Lang = lang === 'en' ? 'zh' : 'en';
       </a>
 
       <div class="hidden md:flex items-center gap-6">
-        <a href={`/${lang}/tools`} class="text-gray-600 hover:text-primary-600 transition-colors">{t(lang, 'nav.allTools')}</a>
+        <a href={`${langPathPrefix(lang)}tools`} class="text-gray-600 hover:text-primary-600 transition-colors">{t(lang, 'nav.allTools')}</a>
         <div class="relative group" data-dropdown>
           <button
             class="text-gray-600 hover:text-primary-600 transition-colors"
@@ -38,7 +38,7 @@ const otherLang: Lang = lang === 'en' ? 'zh' : 'en';
           >{t(lang, 'nav.categories')} ▾</button>
           <div class="absolute top-full left-0 mt-1 w-48 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all" data-dropdown-menu>
             {sortedCategories.map((cat) => (
-              <a href={`/${lang}/categories/${cat.slug}`} class="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600">
+              <a href={`${langPathPrefix(lang)}categories/${cat.slug}`} class="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600">
                 {cat.data.icon} {(lang === 'zh' && cat.data.titleZh) ? cat.data.titleZh : cat.data.title}
               </a>
             ))}
@@ -53,14 +53,14 @@ const otherLang: Lang = lang === 'en' ? 'zh' : 'en';
           >{t(lang, 'nav.scenarios')} ▾</button>
           <div class="absolute top-full left-0 mt-1 w-56 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all" data-dropdown-menu>
             {scenarios.map((s) => (
-              <a href={`/${lang}/scenarios/${s.slug}`} class="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600">
+              <a href={`${langPathPrefix(lang)}scenarios/${s.slug}`} class="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600">
                 {s.data.icon} {(lang === 'zh' && s.data.titleZh) ? s.data.titleZh : s.data.title}
               </a>
             ))}
           </div>
         </div>
-        <a href={`/${lang}/rankings`} class="text-gray-600 hover:text-primary-600 transition-colors">{t(lang, 'nav.rankings')}</a>
-        <a href={`/${lang}/compare`} class="text-gray-600 hover:text-primary-600 transition-colors">{t(lang, 'nav.compare')}</a>
+        <a href={`${langPathPrefix(lang)}rankings`} class="text-gray-600 hover:text-primary-600 transition-colors">{t(lang, 'nav.rankings')}</a>
+        <a href={`${langPathPrefix(lang)}compare`} class="text-gray-600 hover:text-primary-600 transition-colors">{t(lang, 'nav.compare')}</a>
 
         <div class="flex items-center gap-1 text-sm border-l border-gray-200 pl-4">
           <a
@@ -90,19 +90,19 @@ const otherLang: Lang = lang === 'en' ? 'zh' : 'en';
     </div>
 
     <div id="mobile-menu" class="hidden md:hidden pb-4">
-      <a href={`/${lang}/tools`} class="block py-2 text-gray-600">{t(lang, 'nav.allTools')}</a>
+      <a href={`${langPathPrefix(lang)}tools`} class="block py-2 text-gray-600">{t(lang, 'nav.allTools')}</a>
       {sortedCategories.map((cat) => (
-        <a href={`/${lang}/categories/${cat.slug}`} class="block py-2 text-gray-600 pl-4">
+        <a href={`${langPathPrefix(lang)}categories/${cat.slug}`} class="block py-2 text-gray-600 pl-4">
           {cat.data.icon} {(lang === 'zh' && cat.data.titleZh) ? cat.data.titleZh : cat.data.title}
         </a>
       ))}
       {scenarios.map((s) => (
-        <a href={`/${lang}/scenarios/${s.slug}`} class="block py-2 text-gray-600 pl-4">
+        <a href={`${langPathPrefix(lang)}scenarios/${s.slug}`} class="block py-2 text-gray-600 pl-4">
           {s.data.icon} {(lang === 'zh' && s.data.titleZh) ? s.data.titleZh : s.data.title}
         </a>
       ))}
-      <a href={`/${lang}/rankings`} class="block py-2 text-gray-600">{t(lang, 'nav.rankings')}</a>
-      <a href={`/${lang}/compare`} class="block py-2 text-gray-600">{t(lang, 'nav.compare')}</a>
+      <a href={`${langPathPrefix(lang)}rankings`} class="block py-2 text-gray-600">{t(lang, 'nav.rankings')}</a>
+      <a href={`${langPathPrefix(lang)}compare`} class="block py-2 text-gray-600">{t(lang, 'nav.compare')}</a>
       <div class="flex items-center gap-2 py-2 text-sm">
         <a
           href={switchLangPath(currentPath, 'en')}

@@ -1,7 +1,7 @@
 ---
 import StarRating from './StarRating.astro';
 import type { CollectionEntry } from 'astro:content';
-import { type Lang, t } from '../utils/i18n';
+import { type Lang, t, langPathPrefix } from '../utils/i18n';
 
 interface Props {
   tool: CollectionEntry<'tools'>;
@@ -23,13 +23,13 @@ const pricingColors: Record<string, string> = {
 ---
 
 <a
-  href={`/${lang}/tools/${tool.slug}`}
+  href={`${langPathPrefix(lang)}tools/${tool.slug}`}
   class="block group p-5 border border-gray-200 rounded-xl hover:border-primary-300 hover:shadow-md transition-all"
   data-tool-card
   data-category={data.category}
   data-pricing={data.pricing}
   data-title={title}
-  data-rating={String(data.rating)}
+  data-rating={String(data.rating ?? 0)}
   data-date={data.dateAdded.toISOString().split('T')[0]}
 >
   <div class="flex items-start gap-4">

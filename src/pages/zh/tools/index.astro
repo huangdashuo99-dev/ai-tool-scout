@@ -4,7 +4,7 @@ import ToolCard from '../../../components/ToolCard.astro';
 import FilterBar from '../../../components/FilterBar.astro';
 import Breadcrumb from '../../../components/Breadcrumb.astro';
 import { getCollection } from 'astro:content';
-import { type Lang, t } from '../../../utils/i18n';
+import { type Lang, t, langPathPrefix } from '../../../utils/i18n';
 
 const lang: Lang = 'zh';
 
@@ -27,8 +27,8 @@ const sortedTools = [...allTools].sort(
   lang={lang}
   title={t(lang, 'tools.pageTitle')}
   description={`${allTools.length} ${t(lang, 'tools.pageSubtitle')}`}
-  canonicalUrl={`https://aitoolscout.com/${lang}/tools`}
-  currentPath={`/${lang}/tools`}
+  canonicalUrl={`https://aitoolscout.com${langPathPrefix(lang)}tools`}
+  currentPath={`${langPathPrefix(lang)}tools`}
 >
   <Breadcrumb lang={lang} crumbs={[
     { label: t(lang, 'breadcrumb.home'), href: '/' },

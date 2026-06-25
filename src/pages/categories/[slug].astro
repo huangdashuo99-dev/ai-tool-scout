@@ -1,9 +1,9 @@
 ---
-import BaseLayout from '../../../layouts/BaseLayout.astro';
-import ToolCard from '../../../components/ToolCard.astro';
-import Breadcrumb from '../../../components/Breadcrumb.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ToolCard from '../../components/ToolCard.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
 import { getCollection } from 'astro:content';
-import { type Lang, t } from '../../../utils/i18n';
+import { type Lang, t, langPathPrefix } from '../../utils/i18n';
 
 const lang: Lang = 'en';
 
@@ -24,15 +24,15 @@ const description = (lang === 'zh' && catData.descriptionZh) ? catData.descripti
 const allTools = await getCollection('tools');
 const categoryTools = allTools
   .filter((t) => t.data.category === category.slug)
-  .sort((a, b) => b.data.rating - a.data.rating || b.data.dateAdded.getTime() - a.data.dateAdded.getTime());
+  .sort((a, b) => (b.data.rating ?? 0) - (a.data.rating ?? 0) || b.data.dateAdded.getTime() - a.data.dateAdded.getTime());
 ---
 
 <BaseLayout
   lang={lang}
   title={`${catData.icon} ${title} AI Tools`}
   description={description}
-  canonicalUrl={`https://aitoolscout.com/${lang}/categories/${category.slug}`}
-  currentPath={`/${lang}/categories/${category.slug}`}
+  canonicalUrl={`https://aitoolscout.com${langPathPrefix(lang)}categories/${category.slug}`}
+  currentPath={`${langPathPrefix(lang)}categories/${category.slug}`}
 >
   <Breadcrumb lang={lang} crumbs={[
     { label: t(lang, 'breadcrumb.home'), href: '/' },

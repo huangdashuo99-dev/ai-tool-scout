@@ -11,7 +11,7 @@ const tools = defineCollection({
     tags: z.array(z.string()),
     pricing: z.enum(['free', 'freemium', 'paid']),
     priceFrom: z.string(),
-    rating: z.number().min(1).max(5),
+    rating: z.number().min(1).max(5).optional(),
     affiliateUrl: z.string().url(),
     affiliateNetwork: z.enum(['direct', 'impact', 'shareasale']),
     officialUrl: z.string().url(),
