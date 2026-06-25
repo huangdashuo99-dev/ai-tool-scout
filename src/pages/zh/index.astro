@@ -15,7 +15,7 @@ const scenarios = await getCollection('scenarios');
 const sortedCategories = categories.sort((a, b) => a.data.order - b.data.order);
 
 const topTools = [...allTools]
-  .sort((a, b) => b.data.rating - a.data.rating || b.data.dateAdded.getTime() - a.data.dateAdded.getTime())
+  .sort((a, b) => (b.data.rating ?? 0) - (a.data.rating ?? 0) || b.data.dateAdded.getTime() - a.data.dateAdded.getTime())
   .slice(0, 10);
 
 const thirtyDaysAgo = new Date();

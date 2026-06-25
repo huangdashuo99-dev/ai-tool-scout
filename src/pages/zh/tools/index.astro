@@ -19,7 +19,7 @@ const categoryOptions = sortedCategories.map((c) => ({
 }));
 
 const sortedTools = [...allTools].sort(
-  (a, b) => b.data.rating - a.data.rating || b.data.dateAdded.getTime() - a.data.dateAdded.getTime()
+  (a, b) => (b.data.rating ?? 0) - (a.data.rating ?? 0) || b.data.dateAdded.getTime() - a.data.dateAdded.getTime()
 );
 ---
 

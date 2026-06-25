@@ -24,7 +24,7 @@ const description = (lang === 'zh' && catData.descriptionZh) ? catData.descripti
 const allTools = await getCollection('tools');
 const categoryTools = allTools
   .filter((t) => t.data.category === category.slug)
-  .sort((a, b) => b.data.rating - a.data.rating || b.data.dateAdded.getTime() - a.data.dateAdded.getTime());
+  .sort((a, b) => (b.data.rating ?? 0) - (a.data.rating ?? 0) || b.data.dateAdded.getTime() - a.data.dateAdded.getTime());
 ---
 
 <BaseLayout
