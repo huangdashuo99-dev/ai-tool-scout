@@ -1,4 +1,4 @@
----
+﻿---
 title: "Midjourney"
 titleZh: "Midjourney"
 slug: "midjourney"
@@ -8,7 +8,7 @@ category: "image"
 tags: ["image-generation", "art", "design", "creative"]
 pricing: "paid"
 priceFrom: "$10/mo"
-rating: 4.7
+rating: null
 affiliateUrl: "https://midjourney.com"
 affiliateNetwork: "direct"
 officialUrl: "https://midjourney.com"

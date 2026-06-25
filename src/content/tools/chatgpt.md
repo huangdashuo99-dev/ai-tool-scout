@@ -1,4 +1,4 @@
----
+﻿---
 title: "ChatGPT"
 titleZh: "ChatGPT"
 slug: "chatgpt"
@@ -8,7 +8,7 @@ category: "writing"
 tags: ["chat", "writing", "coding", "free-tier"]
 pricing: "freemium"
 priceFrom: "$0"
-rating: 4.5
+rating: null
 affiliateUrl: "https://openai.com/chatgpt"
 affiliateNetwork: "direct"
 officialUrl: "https://openai.com/chatgpt"

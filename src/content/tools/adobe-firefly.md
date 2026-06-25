@@ -1,4 +1,4 @@
----
+﻿---
 title: "Adobe Firefly"
 titleZh: "Adobe Firefly"
 slug: "adobe-firefly"
@@ -8,7 +8,7 @@ category: "image"
 tags: ["image-generation", "adobe", "commercial", "freemium"]
 pricing: "freemium"
 priceFrom: "$0"
-rating: 4.4
+rating: null
 affiliateUrl: "https://firefly.adobe.com"
 affiliateNetwork: "direct"
 officialUrl: "https://firefly.adobe.com"

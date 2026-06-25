@@ -1,4 +1,4 @@
----
+﻿---
 title: "Codeium"
 titleZh: "Codeium"
 slug: "codeium"
@@ -8,7 +8,7 @@ category: "coding"
 tags: ["coding", "autocomplete", "free", "ide"]
 pricing: "free"
 priceFrom: "$0"
-rating: 4.3
+rating: null
 affiliateUrl: "https://codeium.com"
 affiliateNetwork: "direct"
 officialUrl: "https://codeium.com"

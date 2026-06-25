@@ -1,4 +1,4 @@
----
+﻿---
 title: "Cursor"
 titleZh: "Cursor"
 slug: "cursor"
@@ -8,7 +8,7 @@ category: "coding"
 tags: ["coding", "ide", "ai-editor", "developer"]
 pricing: "freemium"
 priceFrom: "$0"
-rating: 4.6
+rating: null
 affiliateUrl: "https://cursor.sh"
 affiliateNetwork: "direct"
 officialUrl: "https://cursor.sh"

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Luma AI"
 titleZh: "Luma AI"
 slug: "luma-ai"

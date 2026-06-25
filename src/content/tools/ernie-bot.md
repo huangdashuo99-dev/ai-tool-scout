@@ -1,4 +1,4 @@
----
+﻿---
 title: "ERNIE Bot"
 titleZh: "文心一言"
 slug: "ernie-bot"

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Runway"
 titleZh: "Runway"
 slug: "runway"
@@ -8,7 +8,7 @@ category: "video"
 tags: ["video-generation", "video-editing", "creative", "gen3"]
 pricing: "freemium"
 priceFrom: "$0"
-rating: 4.3
+rating: null
 affiliateUrl: "https://runwayml.com"
 affiliateNetwork: "direct"
 officialUrl: "https://runwayml.com"

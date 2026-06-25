@@ -1,4 +1,4 @@
----
+﻿---
 title: "Ideogram"
 titleZh: "Ideogram"
 slug: "ideogram"

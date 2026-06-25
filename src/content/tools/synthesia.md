@@ -1,4 +1,4 @@
----
+﻿---
 title: "Synthesia"
 titleZh: "Synthesia"
 slug: "synthesia"

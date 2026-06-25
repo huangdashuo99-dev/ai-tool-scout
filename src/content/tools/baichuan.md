@@ -1,4 +1,4 @@
----
+﻿---
 title: "Baichuan"
 titleZh: "百小应"
 slug: "baichuan"

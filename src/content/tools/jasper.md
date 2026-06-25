@@ -1,4 +1,4 @@
----
+﻿---
 title: "Jasper"
 titleZh: "Jasper"
 slug: "jasper"
@@ -8,7 +8,7 @@ category: "writing"
 tags: ["marketing", "copywriting", "brand-voice", "content"]
 pricing: "paid"
 priceFrom: "$49/mo"
-rating: 4.0
+rating: null
 affiliateUrl: "https://jasper.ai"
 affiliateNetwork: "direct"
 officialUrl: "https://jasper.ai"

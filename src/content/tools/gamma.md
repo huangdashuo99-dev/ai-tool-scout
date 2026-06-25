@@ -1,4 +1,4 @@
----
+﻿---
 title: "Gamma"
 titleZh: "Gamma"
 slug: "gamma"

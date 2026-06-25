@@ -1,4 +1,4 @@
----
+﻿---
 title: "Replit AI"
 titleZh: "Replit AI"
 slug: "replit-ai"
@@ -8,7 +8,7 @@ category: "coding"
 tags: ["coding", "ide", "deployment", "freemium"]
 pricing: "freemium"
 priceFrom: "$0"
-rating: 4.4
+rating: null
 affiliateUrl: "https://replit.com"
 affiliateNetwork: "direct"
 officialUrl: "https://replit.com"

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Grammarly AI"
 titleZh: "Grammarly AI"
 slug: "grammarly-ai"
@@ -8,7 +8,7 @@ category: "writing"
 tags: ["grammar", "writing", "editing", "tone", "free-tier"]
 pricing: "freemium"
 priceFrom: "$0"
-rating: 4.1
+rating: null
 affiliateUrl: "https://grammarly.com"
 affiliateNetwork: "direct"
 officialUrl: "https://grammarly.com"

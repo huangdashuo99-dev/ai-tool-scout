@@ -1,4 +1,4 @@
----
+﻿---
 title: "Gemini"
 titleZh: "Gemini"
 slug: "gemini"
@@ -8,7 +8,7 @@ category: "writing"
 tags: ["chat", "writing", "coding", "free-tier"]
 pricing: "freemium"
 priceFrom: "$0"
-rating: 4.5
+rating: null
 affiliateUrl: "https://gemini.google.com"
 affiliateNetwork: "direct"
 officialUrl: "https://gemini.google.com"

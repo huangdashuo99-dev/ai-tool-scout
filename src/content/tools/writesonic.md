@@ -1,4 +1,4 @@
----
+﻿---
 title: "Writesonic"
 titleZh: "Writesonic"
 slug: "writesonic"
@@ -8,7 +8,7 @@ category: "writing"
 tags: ["writing", "content", "seo", "freemium"]
 pricing: "freemium"
 priceFrom: "$0"
-rating: 4.3
+rating: null
 affiliateUrl: "https://writesonic.com"
 affiliateNetwork: "direct"
 officialUrl: "https://writesonic.com"

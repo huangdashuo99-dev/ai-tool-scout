@@ -1,4 +1,4 @@
----
+﻿---
 title: "GitHub Copilot"
 titleZh: "GitHub Copilot"
 slug: "github-copilot"
@@ -8,7 +8,7 @@ category: "coding"
 tags: ["coding", "ide", "autocomplete", "developer"]
 pricing: "paid"
 priceFrom: "$10/mo"
-rating: 4.4
+rating: null
 affiliateUrl: "https://github.com/features/copilot"
 affiliateNetwork: "direct"
 officialUrl: "https://github.com/features/copilot"

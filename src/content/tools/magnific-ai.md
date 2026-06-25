@@ -1,4 +1,4 @@
----
+﻿---
 title: "Magnific AI"
 titleZh: "Magnific AI"
 slug: "magnific-ai"

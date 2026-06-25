@@ -1,4 +1,4 @@
----
+﻿---
 title: "Canva AI"
 titleZh: "Canva AI"
 slug: "canva-ai"
@@ -8,7 +8,7 @@ category: "image"
 tags: ["design", "image-generation", "freemium"]
 pricing: "freemium"
 priceFrom: "$0"
-rating: 4.5
+rating: null
 affiliateUrl: "https://canva.com"
 affiliateNetwork: "direct"
 officialUrl: "https://canva.com"

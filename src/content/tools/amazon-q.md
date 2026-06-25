@@ -1,4 +1,4 @@
----
+﻿---
 title: "Amazon Q"
 titleZh: "Amazon Q"
 slug: "amazon-q"

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Notion AI"
 titleZh: "Notion AI"
 slug: "notion-ai"
@@ -8,7 +8,7 @@ category: "productivity"
 tags: ["writing", "productivity", "workspace", "notes"]
 pricing: "paid"
 priceFrom: "$10/mo"
-rating: 4.2
+rating: null
 affiliateUrl: "https://notion.so"
 affiliateNetwork: "direct"
 officialUrl: "https://notion.so"

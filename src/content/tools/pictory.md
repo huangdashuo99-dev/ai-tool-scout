@@ -1,4 +1,4 @@
----
+﻿---
 title: "Pictory"
 titleZh: "Pictory"
 slug: "pictory"
@@ -8,7 +8,7 @@ category: "video"
 tags: ["video-creation", "text-to-video", "content-marketing"]
 pricing: "paid"
 priceFrom: "$19/mo"
-rating: 3.9
+rating: null
 affiliateUrl: "https://pictory.ai"
 affiliateNetwork: "direct"
 officialUrl: "https://pictory.ai"

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Claude"
 titleZh: "Claude"
 slug: "claude"
@@ -8,7 +8,7 @@ category: "writing"
 tags: ["chat", "writing", "coding", "freemium"]
 pricing: "freemium"
 priceFrom: "$0"
-rating: 4.7
+rating: null
 affiliateUrl: "https://claude.ai"
 affiliateNetwork: "direct"
 officialUrl: "https://claude.ai"

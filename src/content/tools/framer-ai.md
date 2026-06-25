@@ -1,4 +1,4 @@
----
+﻿---
 title: "Framer AI"
 titleZh: "Framer AI"
 slug: "framer-ai"

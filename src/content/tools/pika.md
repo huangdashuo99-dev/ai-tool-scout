@@ -1,4 +1,4 @@
----
+﻿---
 title: "Pika"
 titleZh: "Pika"
 slug: "pika"
@@ -8,7 +8,7 @@ category: "video"
 tags: ["video-generation", "ai-video", "freemium"]
 pricing: "freemium"
 priceFrom: "$0"
-rating: 4.4
+rating: null
 affiliateUrl: "https://pika.art"
 affiliateNetwork: "direct"
 officialUrl: "https://pika.art"

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Perplexity"
 titleZh: "Perplexity"
 slug: "perplexity"
@@ -8,7 +8,7 @@ category: "productivity"
 tags: ["search", "research", "productivity", "freemium"]
 pricing: "freemium"
 priceFrom: "$0"
-rating: 4.6
+rating: null
 affiliateUrl: "https://perplexity.ai"
 affiliateNetwork: "direct"
 officialUrl: "https://perplexity.ai"

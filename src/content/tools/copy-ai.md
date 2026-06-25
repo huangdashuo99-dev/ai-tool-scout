@@ -1,4 +1,4 @@
----
+﻿---
 title: "Copy.ai"
 titleZh: "Copy.ai"
 slug: "copy-ai"
@@ -8,7 +8,7 @@ category: "writing"
 tags: ["marketing", "copywriting", "content", "freemium"]
 pricing: "freemium"
 priceFrom: "$0"
-rating: 4.2
+rating: null
 affiliateUrl: "https://copy.ai"
 affiliateNetwork: "direct"
 officialUrl: "https://copy.ai"

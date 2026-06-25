@@ -1,4 +1,4 @@
----
+﻿---
 title: "Tongyi Qianwen"
 titleZh: "通义千问"
 slug: "tongyi-qianwen"

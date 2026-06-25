@@ -1,4 +1,4 @@
----
+﻿---
 title: "DALL-E 3"
 titleZh: "DALL-E 3"
 slug: "dalle"
@@ -8,7 +8,7 @@ category: "image"
 tags: ["image-generation", "text-rendering", "prompt-accuracy"]
 pricing: "freemium"
 priceFrom: "$0"
-rating: 4.3
+rating: null
 affiliateUrl: "https://openai.com/dall-e"
 affiliateNetwork: "direct"
 officialUrl: "https://openai.com/dall-e"

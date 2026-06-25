@@ -1,4 +1,4 @@
----
+﻿---
 title: "CapCut"
 titleZh: "CapCut"
 slug: "capcut"

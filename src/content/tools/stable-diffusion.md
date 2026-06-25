@@ -1,4 +1,4 @@
----
+﻿---
 title: "Stable Diffusion"
 titleZh: "Stable Diffusion"
 slug: "stable-diffusion"
@@ -8,7 +8,7 @@ category: "image"
 tags: ["image-generation", "open-source", "free", "local"]
 pricing: "free"
 priceFrom: "$0"
-rating: 4.5
+rating: null
 affiliateUrl: "https://stability.ai"
 affiliateNetwork: "direct"
 officialUrl: "https://stability.ai"
