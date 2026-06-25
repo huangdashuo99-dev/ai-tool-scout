@@ -15,8 +15,6 @@ officialUrl: "https://stability.ai"
 logo: "/logos/placeholder.svg"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: true
-isNew: false
-dateAdded: 2024-11-30
 alternatives: ["midjourney", "dalle", "adobe-firefly"]
 faq:
   - question: "Is Stable Diffusion free?"
@@ -32,6 +30,8 @@ faqZh:
     answer: "你需要至少 4GB VRAM 的 GPU（推荐 8GB+）。NVIDIA GPU 效果最好。还需要 10GB+ 可用磁盘空间存储模型。"
   - question: "Stable Diffusion 和 Midjourney 相比如何？"
     answer: "Stable Diffusion 免费开源，支持无限本地使用。Midjourney 产生更具艺术性的结果，但需要订阅。Stable Diffusion 提供更多控制和自定义。"
+isNew: true
+dateAdded: 2025-06-01
 ---
 
 ## Overview

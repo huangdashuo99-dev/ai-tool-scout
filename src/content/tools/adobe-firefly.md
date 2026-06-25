@@ -15,8 +15,6 @@ officialUrl: "https://firefly.adobe.com"
 logo: "/logos/placeholder.svg"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
-isNew: false
-dateAdded: 2024-11-30
 alternatives: ["midjourney", "dalle", "stable-diffusion"]
 faq:
   - question: "Is Adobe Firefly free?"
@@ -32,6 +30,8 @@ faqZh:
     answer: "是的，Firefly 基于授权内容（Adobe Stock、公共领域）训练，设计为商业安全。Adobe 为企业用户提供知识产权赔偿。"
   - question: "Firefly 如何与 Photoshop 集成？"
     answer: "Firefly 驱动 Photoshop 中的 Generative Fill 和 Generative Expand，让你直接在工作流中使用 AI 添加、移除或扩展图像内容。"
+isNew: true
+dateAdded: 2025-06-01
 ---
 
 ## Overview

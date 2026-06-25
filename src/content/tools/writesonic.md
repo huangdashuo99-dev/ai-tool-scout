@@ -15,8 +15,6 @@ officialUrl: "https://writesonic.com"
 logo: "/logos/placeholder.svg"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
-isNew: false
-dateAdded: 2024-11-30
 alternatives: ["jasper", "copy-ai", "chatgpt"]
 faq:
   - question: "Is Writesonic free to use?"
@@ -32,6 +30,8 @@ faqZh:
     answer: "有，Writesonic 包含 Chatsonic（AI 聊天）、Photosonic（AI 图像）和用于优化搜索引擎内容的 SEO 工具。"
   - question: "Writesonic 支持哪些语言？"
     answer: "Writesonic 支持 25+ 种语言，包括英语、西班牙语、法语、德语、中文、日语等。"
+isNew: true
+dateAdded: 2025-06-01
 ---
 
 ## Overview

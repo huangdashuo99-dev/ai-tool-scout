@@ -15,8 +15,6 @@ officialUrl: "https://gemini.google.com"
 logo: "/logos/placeholder.svg"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: true
-isNew: false
-dateAdded: 2024-11-30
 alternatives: ["chatgpt", "claude", "perplexity"]
 faq:
   - question: "Is Gemini free to use?"
@@ -32,6 +30,8 @@ faqZh:
     answer: "Gemini 擅长多模态任务，并与 Google 服务（Gmail、Docs、Sheets）深度集成。ChatGPT 拥有更大的插件生态系统和更多第三方集成。"
   - question: "Gemini 能分析图片吗？"
     answer: "可以，Gemini 具有强大的多模态能力，可以分析、描述你上传的图片并回答相关问题。"
+isNew: true
+dateAdded: 2025-06-01
 ---
 
 ## Overview

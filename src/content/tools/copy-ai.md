@@ -15,8 +15,6 @@ officialUrl: "https://copy.ai"
 logo: "/logos/placeholder.svg"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
-isNew: false
-dateAdded: 2024-11-30
 alternatives: ["jasper", "writesonic", "chatgpt"]
 faq:
   - question: "Is Copy.ai free to use?"
@@ -32,6 +30,8 @@ faqZh:
     answer: "Copy.ai 擅长营销文案，包括广告标题、产品描述、电子邮件序列、社交媒体帖子、博客开头和着陆页文案。"
   - question: "Copy.ai 和 Jasper 相比如何？"
     answer: "Copy.ai 更实惠，免费版更好。Jasper 提供更多模板和更好的长文内容。两者在营销文案方面都很强。"
+isNew: true
+dateAdded: 2025-06-01
 ---
 
 ## Overview

@@ -15,8 +15,6 @@ officialUrl: "https://claude.ai"
 logo: "/logos/placeholder.svg"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: true
-isNew: false
-dateAdded: 2024-11-30
 alternatives: ["chatgpt", "gemini", "perplexity"]
 faq:
   - question: "Is Claude free to use?"
@@ -32,6 +30,8 @@ faqZh:
     answer: "Claude 以更细致的推理、更好的指令遵循和更强的安全措施著称。它擅长处理长文档和复杂分析。ChatGPT 拥有更广泛的插件生态和图像生成功能。"
   - question: "Claude 能写代码吗？"
     answer: "可以，Claude 非常擅长编码任务，包括在多种编程语言中编写、调试、解释和重构代码。"
+isNew: true
+dateAdded: 2025-06-01
 ---
 
 ## Overview

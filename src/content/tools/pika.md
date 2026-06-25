@@ -15,8 +15,6 @@ officialUrl: "https://pika.art"
 logo: "/logos/placeholder.svg"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
-isNew: false
-dateAdded: 2024-11-30
 alternatives: ["runway", "stable-video", "synthesia"]
 faq:
   - question: "Is Pika free to use?"
@@ -32,6 +30,8 @@ faqZh:
     answer: "Pika 生成最长 3 秒的视频。你可以扩展或组合片段以获得更长内容。"
   - question: "Pika 可以用来做什么？"
     answer: "Pika 非常适合社交媒体内容、产品演示、创意项目以及为静态图像添加动态效果。"
+isNew: true
+dateAdded: 2025-06-01
 ---
 
 ## Overview

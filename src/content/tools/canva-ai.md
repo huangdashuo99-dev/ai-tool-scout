@@ -15,8 +15,6 @@ officialUrl: "https://canva.com"
 logo: "/logos/placeholder.svg"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: true
-isNew: false
-dateAdded: 2024-11-30
 alternatives: ["adobe-firefly", "figma", "midjourney"]
 faq:
   - question: "Is Canva AI free?"
@@ -32,6 +30,8 @@ faqZh:
     answer: "Canva 包含 Magic Eraser（移除对象）、Magic Edit（用文本编辑）、文本转图像、背景移除器、Magic Write（AI 文案）和 Dream Lab（AI 图像生成）。"
   - question: "我可以用 Canva AI 做商业项目吗？"
     answer: "可以，Canva 上生成的 AI 内容可用于商业用途。但某些 AI 图像可能与其他用户输出相似，因此不保证独特性。"
+isNew: true
+dateAdded: 2025-06-01
 ---
 
 ## Overview

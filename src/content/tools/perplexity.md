@@ -15,8 +15,6 @@ officialUrl: "https://perplexity.ai"
 logo: "/logos/placeholder.svg"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: true
-isNew: false
-dateAdded: 2024-11-30
 alternatives: ["chatgpt", "claude", "gemini"]
 faq:
   - question: "Is Perplexity free to use?"
@@ -32,6 +30,8 @@ faqZh:
     answer: "Perplexity 使用 AI 从多个来源综合答案，并为每个声明提供引用。Google 返回你需要逐一点击的链接列表。Perplexity 通过直接给出答案来节省时间。"
   - question: "Perplexity 能实时搜索互联网吗？"
     answer: "可以，Perplexity 为每个查询实时搜索网络，提供带有来源引用的当前信息。"
+isNew: true
+dateAdded: 2025-06-01
 ---
 
 ## Overview

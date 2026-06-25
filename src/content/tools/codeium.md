@@ -15,8 +15,6 @@ officialUrl: "https://codeium.com"
 logo: "/logos/placeholder.svg"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
-isNew: false
-dateAdded: 2024-11-30
 alternatives: ["github-copilot", "cursor", "tabnine"]
 faq:
   - question: "Is Codeium really free?"
@@ -32,6 +30,8 @@ faqZh:
     answer: "Codeium 对个人完全免费，而 Copilot 每月 $10。Codeium 支持更多 IDE 和语言。Copilot 在某些基准测试中代码质量可能略好。"
   - question: "Codeium 支持哪些 IDE？"
     answer: "Codeium 支持 VS Code、JetBrains（IntelliJ、PyCharm、WebStorm 等）、Vim/Neovim、Emacs、Sublime Text 等。"
+isNew: true
+dateAdded: 2025-06-01
 ---
 
 ## Overview

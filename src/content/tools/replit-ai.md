@@ -15,8 +15,6 @@ officialUrl: "https://replit.com"
 logo: "/logos/placeholder.svg"
 screenshots: ["/screenshots/placeholder.svg"]
 isFeatured: false
-isNew: false
-dateAdded: 2024-11-30
 alternatives: ["cursor", "github-copilot", "codeium"]
 faq:
   - question: "Is Replit AI free to use?"
@@ -32,6 +30,8 @@ faqZh:
     answer: "可以，Replit 为 Web 应用、API 和后台工作者提供一键部署。免费版包含基本部署和 replit.dev 子域名。"
   - question: "Replit 支持哪些语言？"
     answer: "Replit 支持 50+ 种语言，包括 Python、JavaScript、TypeScript、Java、C++、Go、Ruby 等。每种语言都有优化的环境。"
+isNew: true
+dateAdded: 2025-06-01
 ---
 
 ## Overview
