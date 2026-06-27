@@ -55,7 +55,13 @@ const newTools = allTools
   .sort((a, b) => b.data.dateAdded.getTime() - a.data.dateAdded.getTime())
   .slice(0, 6);
 
-const hotTags = ['writing', 'image generation', 'coding', 'free', 'chatbot', 'video'];
+const hotTags = [
+  { label: 'writing', slug: 'writing' },
+  { label: 'image generation', slug: 'image' },
+  { label: 'coding', slug: 'coding' },
+  { label: 'video', slug: 'video' },
+  { label: 'productivity', slug: 'productivity' },
+];
 ---
 
 <BaseLayout
@@ -76,9 +82,9 @@ const hotTags = ['writing', 'image generation', 'coding', 'free', 'chatbot', 'vi
       <div id="search" class="mt-8 max-w-xl mx-auto"></div>
       <div class="mt-6 flex flex-wrap justify-center gap-2">
         {hotTags.map((tag) => (
-          <span class="px-3 py-1 bg-white border border-gray-200 rounded-full text-sm text-gray-600 hover:border-primary-300 hover:text-primary-600 cursor-pointer transition-colors">
-            {tag}
-          </span>
+          <a href={`${langPathPrefix(lang)}categories/${tag.slug}`} class="px-3 py-1 bg-white border border-gray-200 rounded-full text-sm text-gray-600 hover:border-primary-300 hover:text-primary-600 cursor-pointer transition-colors">
+            {tag.label}
+          </a>
         ))}
       </div>
     </div>
