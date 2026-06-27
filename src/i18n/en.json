@@ -16,7 +16,11 @@
     "whatDoYouWant": "What do you want to do?",
     "newThisWeek": "New This Week",
     "browseByCategory": "Browse by Category",
-    "hotTags": ["writing", "image generation", "coding", "free", "chatbot", "video"]
+    "hotTags": ["writing", "image generation", "coding", "free", "chatbot", "video"],
+    "sortApiCalls": "API Usage",
+    "sortFree": "Free First",
+    "sortSearch": "Search Popularity",
+    "sortCommunity": "Community"
   },
   "tools": {
     "pageTitle": "All AI Tools",

@@ -1,0 +1,536 @@
+{
+  "updatedAt": "2026-06-27T02:05:44.935Z",
+  "tools": {
+    "adobe-firefly": {
+      "apiCalls": 0,
+      "apiCallsRank": 5,
+      "searchScore": 42,
+      "searchRank": 21,
+      "communityScore": 0,
+      "communityRank": 5,
+      "isFree": false
+    },
+    "amazon-q": {
+      "apiCalls": 0,
+      "apiCallsRank": 6,
+      "searchScore": 22,
+      "searchRank": 53,
+      "communityScore": 0,
+      "communityRank": 6,
+      "isFree": false
+    },
+    "baichuan": {
+      "apiCalls": 0,
+      "apiCallsRank": 7,
+      "searchScore": 30,
+      "searchRank": 40,
+      "communityScore": 0,
+      "communityRank": 7,
+      "isFree": false
+    },
+    "canva-ai": {
+      "apiCalls": 0,
+      "apiCallsRank": 8,
+      "searchScore": 50,
+      "searchRank": 16,
+      "communityScore": 0,
+      "communityRank": 8,
+      "isFree": false
+    },
+    "capcut": {
+      "apiCalls": 0,
+      "apiCallsRank": 9,
+      "searchScore": 55,
+      "searchRank": 12,
+      "communityScore": 0,
+      "communityRank": 9,
+      "isFree": true
+    },
+    "chatglm": {
+      "apiCalls": 0,
+      "apiCallsRank": 10,
+      "searchScore": 33,
+      "searchRank": 35,
+      "communityScore": 100,
+      "communityRank": 1,
+      "isFree": false
+    },
+    "chatgpt": {
+      "apiCalls": 2,
+      "apiCallsRank": 4,
+      "searchScore": 100,
+      "searchRank": 1,
+      "communityScore": 0,
+      "communityRank": 10,
+      "isFree": false
+    },
+    "claude": {
+      "apiCalls": 37,
+      "apiCallsRank": 2,
+      "searchScore": 72,
+      "searchRank": 4,
+      "communityScore": 0,
+      "communityRank": 11,
+      "isFree": false
+    },
+    "codeium": {
+      "apiCalls": 0,
+      "apiCallsRank": 11,
+      "searchScore": 32,
+      "searchRank": 36,
+      "communityScore": 12,
+      "communityRank": 3,
+      "isFree": true
+    },
+    "cody": {
+      "apiCalls": 0,
+      "apiCallsRank": 12,
+      "searchScore": 28,
+      "searchRank": 44,
+      "communityScore": 0,
+      "communityRank": 12,
+      "isFree": true
+    },
+    "copy-ai-workflows": {
+      "apiCalls": 0,
+      "apiCallsRank": 13,
+      "searchScore": 35,
+      "searchRank": 29,
+      "communityScore": 0,
+      "communityRank": 13,
+      "isFree": false
+    },
+    "copy-ai": {
+      "apiCalls": 0,
+      "apiCallsRank": 14,
+      "searchScore": 38,
+      "searchRank": 27,
+      "communityScore": 0,
+      "communityRank": 14,
+      "isFree": false
+    },
+    "cursor": {
+      "apiCalls": 0,
+      "apiCallsRank": 15,
+      "searchScore": 58,
+      "searchRank": 10,
+      "communityScore": 80,
+      "communityRank": 2,
+      "isFree": false
+    },
+    "d-id": {
+      "apiCalls": 0,
+      "apiCallsRank": 16,
+      "searchScore": 20,
+      "searchRank": 57,
+      "communityScore": 0,
+      "communityRank": 15,
+      "isFree": false
+    },
+    "dalle": {
+      "apiCalls": 0,
+      "apiCallsRank": 17,
+      "searchScore": 68,
+      "searchRank": 6,
+      "communityScore": 0,
+      "communityRank": 16,
+      "isFree": false
+    },
+    "deepseek": {
+      "apiCalls": 100,
+      "apiCallsRank": 1,
+      "searchScore": 70,
+      "searchRank": 5,
+      "communityScore": 0,
+      "communityRank": 17,
+      "isFree": true
+    },
+    "descript": {
+      "apiCalls": 0,
+      "apiCallsRank": 18,
+      "searchScore": 35,
+      "searchRank": 30,
+      "communityScore": 0,
+      "communityRank": 18,
+      "isFree": false
+    },
+    "doubao": {
+      "apiCalls": 0,
+      "apiCallsRank": 19,
+      "searchScore": 60,
+      "searchRank": 9,
+      "communityScore": 0,
+      "communityRank": 19,
+      "isFree": false
+    },
+    "elevenlabs": {
+      "apiCalls": 0,
+      "apiCallsRank": 20,
+      "searchScore": 42,
+      "searchRank": 22,
+      "communityScore": 0,
+      "communityRank": 20,
+      "isFree": false
+    },
+    "ernie-bot": {
+      "apiCalls": 0,
+      "apiCallsRank": 21,
+      "searchScore": 55,
+      "searchRank": 13,
+      "communityScore": 0,
+      "communityRank": 21,
+      "isFree": false
+    },
+    "figma-ai": {
+      "apiCalls": 0,
+      "apiCallsRank": 22,
+      "searchScore": 45,
+      "searchRank": 18,
+      "communityScore": 0,
+      "communityRank": 22,
+      "isFree": false
+    },
+    "fireflies-ai": {
+      "apiCalls": 0,
+      "apiCallsRank": 23,
+      "searchScore": 22,
+      "searchRank": 54,
+      "communityScore": 0,
+      "communityRank": 23,
+      "isFree": false
+    },
+    "framer-ai": {
+      "apiCalls": 0,
+      "apiCallsRank": 24,
+      "searchScore": 28,
+      "searchRank": 45,
+      "communityScore": 0,
+      "communityRank": 24,
+      "isFree": false
+    },
+    "gamma": {
+      "apiCalls": 0,
+      "apiCallsRank": 25,
+      "searchScore": 32,
+      "searchRank": 37,
+      "communityScore": 0,
+      "communityRank": 25,
+      "isFree": false
+    },
+    "gemini": {
+      "apiCalls": 14,
+      "apiCallsRank": 3,
+      "searchScore": 78,
+      "searchRank": 3,
+      "communityScore": 0,
+      "communityRank": 26,
+      "isFree": false
+    },
+    "github-copilot": {
+      "apiCalls": 0,
+      "apiCallsRank": 26,
+      "searchScore": 62,
+      "searchRank": 8,
+      "communityScore": 0,
+      "communityRank": 27,
+      "isFree": false
+    },
+    "grammarly-ai": {
+      "apiCalls": 0,
+      "apiCallsRank": 27,
+      "searchScore": 58,
+      "searchRank": 11,
+      "communityScore": 0,
+      "communityRank": 28,
+      "isFree": false
+    },
+    "heygen": {
+      "apiCalls": 0,
+      "apiCallsRank": 28,
+      "searchScore": 32,
+      "searchRank": 38,
+      "communityScore": 0,
+      "communityRank": 29,
+      "isFree": false
+    },
+    "ideogram": {
+      "apiCalls": 0,
+      "apiCallsRank": 29,
+      "searchScore": 28,
+      "searchRank": 46,
+      "communityScore": 0,
+      "communityRank": 30,
+      "isFree": false
+    },
+    "jasper-enhanced": {
+      "apiCalls": 0,
+      "apiCallsRank": 30,
+      "searchScore": 40,
+      "searchRank": 24,
+      "communityScore": 0,
+      "communityRank": 31,
+      "isFree": false
+    },
+    "jasper": {
+      "apiCalls": 0,
+      "apiCallsRank": 31,
+      "searchScore": 45,
+      "searchRank": 19,
+      "communityScore": 0,
+      "communityRank": 32,
+      "isFree": false
+    },
+    "kimi": {
+      "apiCalls": 0,
+      "apiCallsRank": 32,
+      "searchScore": 65,
+      "searchRank": 7,
+      "communityScore": 0,
+      "communityRank": 33,
+      "isFree": false
+    },
+    "leonardo-ai": {
+      "apiCalls": 0,
+      "apiCallsRank": 33,
+      "searchScore": 35,
+      "searchRank": 31,
+      "communityScore": 0,
+      "communityRank": 34,
+      "isFree": false
+    },
+    "luma-ai": {
+      "apiCalls": 0,
+      "apiCallsRank": 34,
+      "searchScore": 30,
+      "searchRank": 41,
+      "communityScore": 0,
+      "communityRank": 35,
+      "isFree": false
+    },
+    "magnific-ai": {
+      "apiCalls": 0,
+      "apiCallsRank": 35,
+      "searchScore": 20,
+      "searchRank": 58,
+      "communityScore": 0,
+      "communityRank": 36,
+      "isFree": false
+    },
+    "mem": {
+      "apiCalls": 0,
+      "apiCallsRank": 36,
+      "searchScore": 18,
+      "searchRank": 59,
+      "communityScore": 0,
+      "communityRank": 37,
+      "isFree": false
+    },
+    "midjourney": {
+      "apiCalls": 0,
+      "apiCallsRank": 37,
+      "searchScore": 82,
+      "searchRank": 2,
+      "communityScore": 0,
+      "communityRank": 38,
+      "isFree": false
+    },
+    "murf-ai": {
+      "apiCalls": 0,
+      "apiCallsRank": 38,
+      "searchScore": 22,
+      "searchRank": 55,
+      "communityScore": 0,
+      "communityRank": 39,
+      "isFree": false
+    },
+    "notion-ai-enhanced": {
+      "apiCalls": 0,
+      "apiCallsRank": 39,
+      "searchScore": 42,
+      "searchRank": 23,
+      "communityScore": 0,
+      "communityRank": 40,
+      "isFree": false
+    },
+    "notion-ai": {
+      "apiCalls": 0,
+      "apiCallsRank": 40,
+      "searchScore": 45,
+      "searchRank": 20,
+      "communityScore": 0,
+      "communityRank": 41,
+      "isFree": false
+    },
+    "otter-ai": {
+      "apiCalls": 0,
+      "apiCallsRank": 41,
+      "searchScore": 28,
+      "searchRank": 47,
+      "communityScore": 0,
+      "communityRank": 42,
+      "isFree": false
+    },
+    "perplexity": {
+      "apiCalls": 0,
+      "apiCallsRank": 42,
+      "searchScore": 55,
+      "searchRank": 14,
+      "communityScore": 0,
+      "communityRank": 43,
+      "isFree": false
+    },
+    "pictory": {
+      "apiCalls": 0,
+      "apiCallsRank": 43,
+      "searchScore": 25,
+      "searchRank": 50,
+      "communityScore": 0,
+      "communityRank": 44,
+      "isFree": false
+    },
+    "pika": {
+      "apiCalls": 0,
+      "apiCallsRank": 44,
+      "searchScore": 35,
+      "searchRank": 32,
+      "communityScore": 0,
+      "communityRank": 45,
+      "isFree": false
+    },
+    "play-ht": {
+      "apiCalls": 0,
+      "apiCallsRank": 45,
+      "searchScore": 25,
+      "searchRank": 51,
+      "communityScore": 0,
+      "communityRank": 46,
+      "isFree": false
+    },
+    "quillbot": {
+      "apiCalls": 0,
+      "apiCallsRank": 46,
+      "searchScore": 40,
+      "searchRank": 25,
+      "communityScore": 0,
+      "communityRank": 47,
+      "isFree": false
+    },
+    "replit-ai": {
+      "apiCalls": 0,
+      "apiCallsRank": 47,
+      "searchScore": 30,
+      "searchRank": 42,
+      "communityScore": 0,
+      "communityRank": 48,
+      "isFree": false
+    },
+    "runway": {
+      "apiCalls": 0,
+      "apiCallsRank": 48,
+      "searchScore": 48,
+      "searchRank": 17,
+      "communityScore": 0,
+      "communityRank": 49,
+      "isFree": false
+    },
+    "rytr": {
+      "apiCalls": 0,
+      "apiCallsRank": 49,
+      "searchScore": 28,
+      "searchRank": 48,
+      "communityScore": 0,
+      "communityRank": 50,
+      "isFree": false
+    },
+    "stable-diffusion": {
+      "apiCalls": 0,
+      "apiCallsRank": 50,
+      "searchScore": 40,
+      "searchRank": 26,
+      "communityScore": 0,
+      "communityRank": 51,
+      "isFree": true
+    },
+    "surfer-seo": {
+      "apiCalls": 0,
+      "apiCallsRank": 51,
+      "searchScore": 25,
+      "searchRank": 52,
+      "communityScore": 0,
+      "communityRank": 52,
+      "isFree": false
+    },
+    "synthesia": {
+      "apiCalls": 0,
+      "apiCallsRank": 52,
+      "searchScore": 30,
+      "searchRank": 43,
+      "communityScore": 0,
+      "communityRank": 53,
+      "isFree": false
+    },
+    "tabnine": {
+      "apiCalls": 0,
+      "apiCallsRank": 53,
+      "searchScore": 35,
+      "searchRank": 33,
+      "communityScore": 4,
+      "communityRank": 4,
+      "isFree": false
+    },
+    "tome": {
+      "apiCalls": 0,
+      "apiCallsRank": 54,
+      "searchScore": 28,
+      "searchRank": 49,
+      "communityScore": 0,
+      "communityRank": 54,
+      "isFree": false
+    },
+    "tongyi-qianwen": {
+      "apiCalls": 0,
+      "apiCallsRank": 55,
+      "searchScore": 52,
+      "searchRank": 15,
+      "communityScore": 0,
+      "communityRank": 55,
+      "isFree": false
+    },
+    "uizard": {
+      "apiCalls": 0,
+      "apiCallsRank": 56,
+      "searchScore": 22,
+      "searchRank": 56,
+      "communityScore": 0,
+      "communityRank": 56,
+      "isFree": false
+    },
+    "writesonic": {
+      "apiCalls": 0,
+      "apiCallsRank": 57,
+      "searchScore": 32,
+      "searchRank": 39,
+      "communityScore": 0,
+      "communityRank": 57,
+      "isFree": false
+    },
+    "xinghuo": {
+      "apiCalls": 0,
+      "apiCallsRank": 58,
+      "searchScore": 38,
+      "searchRank": 28,
+      "communityScore": 0,
+      "communityRank": 58,
+      "isFree": false
+    },
+    "yuanbao": {
+      "apiCalls": 0,
+      "apiCallsRank": 59,
+      "searchScore": 35,
+      "searchRank": 34,
+      "communityScore": 0,
+      "communityRank": 59,
+      "isFree": false
+    }
+  }
+}

@@ -16,7 +16,11 @@
     "whatDoYouWant": "你想做什么？",
     "newThisWeek": "本周新工具",
     "browseByCategory": "按分类浏览",
-    "hotTags": ["写作", "图像生成", "编程", "免费", "聊天机器人", "视频"]
+    "hotTags": ["写作", "图像生成", "编程", "免费", "聊天机器人", "视频"],
+    "sortApiCalls": "API 调用量",
+    "sortFree": "免费优先",
+    "sortSearch": "搜索热度",
+    "sortCommunity": "社区热度"
   },
   "tools": {
     "pageTitle": "全部 AI 工具",
