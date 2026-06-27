@@ -109,5 +109,8 @@
   "lang": {
     "en": "EN",
     "zh": "中文"
+  },
+  "brand": {
+    "name": "AI Tool Scout"
   }
 }
