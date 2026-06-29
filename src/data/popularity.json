@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T15:28:42.775Z",
+  "updatedAt": "2026-06-29T19:41:46.848Z",
   "tools": {
     "adobe-firefly": {
       "apiCalls": 0,
@@ -7,7 +7,7 @@
       "searchScore": 42,
       "searchRank": 21,
       "communityScore": 0,
-      "communityRank": 5,
+      "communityRank": 1,
       "isFree": false
     },
     "amazon-q": {
@@ -16,7 +16,7 @@
       "searchScore": 22,
       "searchRank": 53,
       "communityScore": 0,
-      "communityRank": 6,
+      "communityRank": 2,
       "isFree": false
     },
     "baichuan": {
@@ -25,7 +25,7 @@
       "searchScore": 30,
       "searchRank": 40,
       "communityScore": 0,
-      "communityRank": 7,
+      "communityRank": 3,
       "isFree": false
     },
     "canva-ai": {
@@ -34,7 +34,7 @@
       "searchScore": 50,
       "searchRank": 16,
       "communityScore": 0,
-      "communityRank": 8,
+      "communityRank": 4,
       "isFree": false
     },
     "capcut": {
@@ -43,7 +43,7 @@
       "searchScore": 55,
       "searchRank": 12,
       "communityScore": 0,
-      "communityRank": 9,
+      "communityRank": 5,
       "isFree": true
     },
     "chatglm": {
@@ -51,8 +51,8 @@
       "apiCallsRank": 10,
       "searchScore": 33,
       "searchRank": 35,
-      "communityScore": 100,
-      "communityRank": 1,
+      "communityScore": 0,
+      "communityRank": 6,
       "isFree": false
     },
     "chatgpt": {
@@ -61,7 +61,7 @@
       "searchScore": 100,
       "searchRank": 1,
       "communityScore": 0,
-      "communityRank": 10,
+      "communityRank": 7,
       "isFree": false
     },
     "claude": {
@@ -70,7 +70,7 @@
       "searchScore": 72,
       "searchRank": 4,
       "communityScore": 0,
-      "communityRank": 11,
+      "communityRank": 8,
       "isFree": false
     },
     "codeium": {
@@ -78,8 +78,8 @@
       "apiCallsRank": 11,
       "searchScore": 32,
       "searchRank": 36,
-      "communityScore": 12,
-      "communityRank": 3,
+      "communityScore": 0,
+      "communityRank": 9,
       "isFree": true
     },
     "cody": {
@@ -88,7 +88,7 @@
       "searchScore": 28,
       "searchRank": 44,
       "communityScore": 0,
-      "communityRank": 12,
+      "communityRank": 10,
       "isFree": true
     },
     "copy-ai-workflows": {
@@ -97,7 +97,7 @@
       "searchScore": 35,
       "searchRank": 29,
       "communityScore": 0,
-      "communityRank": 13,
+      "communityRank": 11,
       "isFree": false
     },
     "copy-ai": {
@@ -106,7 +106,7 @@
       "searchScore": 38,
       "searchRank": 27,
       "communityScore": 0,
-      "communityRank": 14,
+      "communityRank": 12,
       "isFree": false
     },
     "cursor": {
@@ -114,8 +114,8 @@
       "apiCallsRank": 15,
       "searchScore": 58,
       "searchRank": 10,
-      "communityScore": 80,
-      "communityRank": 2,
+      "communityScore": 0,
+      "communityRank": 13,
       "isFree": false
     },
     "d-id": {
@@ -124,7 +124,7 @@
       "searchScore": 20,
       "searchRank": 57,
       "communityScore": 0,
-      "communityRank": 15,
+      "communityRank": 14,
       "isFree": false
     },
     "dalle": {
@@ -133,7 +133,7 @@
       "searchScore": 68,
       "searchRank": 6,
       "communityScore": 0,
-      "communityRank": 16,
+      "communityRank": 15,
       "isFree": false
     },
     "deepseek": {
@@ -142,7 +142,7 @@
       "searchScore": 70,
       "searchRank": 5,
       "communityScore": 0,
-      "communityRank": 17,
+      "communityRank": 16,
       "isFree": true
     },
     "descript": {
@@ -151,7 +151,7 @@
       "searchScore": 35,
       "searchRank": 30,
       "communityScore": 0,
-      "communityRank": 18,
+      "communityRank": 17,
       "isFree": false
     },
     "doubao": {
@@ -160,7 +160,7 @@
       "searchScore": 60,
       "searchRank": 9,
       "communityScore": 0,
-      "communityRank": 19,
+      "communityRank": 18,
       "isFree": false
     },
     "elevenlabs": {
@@ -169,7 +169,7 @@
       "searchScore": 42,
       "searchRank": 22,
       "communityScore": 0,
-      "communityRank": 20,
+      "communityRank": 19,
       "isFree": false
     },
     "ernie-bot": {
@@ -178,7 +178,7 @@
       "searchScore": 55,
       "searchRank": 13,
       "communityScore": 0,
-      "communityRank": 21,
+      "communityRank": 20,
       "isFree": false
     },
     "figma-ai": {
@@ -187,7 +187,7 @@
       "searchScore": 45,
       "searchRank": 18,
       "communityScore": 0,
-      "communityRank": 22,
+      "communityRank": 21,
       "isFree": false
     },
     "fireflies-ai": {
@@ -196,7 +196,7 @@
       "searchScore": 22,
       "searchRank": 54,
       "communityScore": 0,
-      "communityRank": 23,
+      "communityRank": 22,
       "isFree": false
     },
     "framer-ai": {
@@ -205,7 +205,7 @@
       "searchScore": 28,
       "searchRank": 45,
       "communityScore": 0,
-      "communityRank": 24,
+      "communityRank": 23,
       "isFree": false
     },
     "gamma": {
@@ -214,7 +214,7 @@
       "searchScore": 32,
       "searchRank": 37,
       "communityScore": 0,
-      "communityRank": 25,
+      "communityRank": 24,
       "isFree": false
     },
     "gemini": {
@@ -223,7 +223,7 @@
       "searchScore": 78,
       "searchRank": 3,
       "communityScore": 0,
-      "communityRank": 26,
+      "communityRank": 25,
       "isFree": false
     },
     "github-copilot": {
@@ -232,7 +232,7 @@
       "searchScore": 62,
       "searchRank": 8,
       "communityScore": 0,
-      "communityRank": 27,
+      "communityRank": 26,
       "isFree": false
     },
     "grammarly-ai": {
@@ -241,7 +241,7 @@
       "searchScore": 58,
       "searchRank": 11,
       "communityScore": 0,
-      "communityRank": 28,
+      "communityRank": 27,
       "isFree": false
     },
     "heygen": {
@@ -250,7 +250,7 @@
       "searchScore": 32,
       "searchRank": 38,
       "communityScore": 0,
-      "communityRank": 29,
+      "communityRank": 28,
       "isFree": false
     },
     "ideogram": {
@@ -259,7 +259,7 @@
       "searchScore": 28,
       "searchRank": 46,
       "communityScore": 0,
-      "communityRank": 30,
+      "communityRank": 29,
       "isFree": false
     },
     "jasper-enhanced": {
@@ -268,7 +268,7 @@
       "searchScore": 40,
       "searchRank": 24,
       "communityScore": 0,
-      "communityRank": 31,
+      "communityRank": 30,
       "isFree": false
     },
     "jasper": {
@@ -277,7 +277,7 @@
       "searchScore": 45,
       "searchRank": 19,
       "communityScore": 0,
-      "communityRank": 32,
+      "communityRank": 31,
       "isFree": false
     },
     "kimi": {
@@ -286,7 +286,7 @@
       "searchScore": 65,
       "searchRank": 7,
       "communityScore": 0,
-      "communityRank": 33,
+      "communityRank": 32,
       "isFree": false
     },
     "leonardo-ai": {
@@ -295,7 +295,7 @@
       "searchScore": 35,
       "searchRank": 31,
       "communityScore": 0,
-      "communityRank": 34,
+      "communityRank": 33,
       "isFree": false
     },
     "luma-ai": {
@@ -304,7 +304,7 @@
       "searchScore": 30,
       "searchRank": 41,
       "communityScore": 0,
-      "communityRank": 35,
+      "communityRank": 34,
       "isFree": false
     },
     "magnific-ai": {
@@ -313,7 +313,7 @@
       "searchScore": 20,
       "searchRank": 58,
       "communityScore": 0,
-      "communityRank": 36,
+      "communityRank": 35,
       "isFree": false
     },
     "mem": {
@@ -322,7 +322,7 @@
       "searchScore": 18,
       "searchRank": 59,
       "communityScore": 0,
-      "communityRank": 37,
+      "communityRank": 36,
       "isFree": false
     },
     "midjourney": {
@@ -331,7 +331,7 @@
       "searchScore": 82,
       "searchRank": 2,
       "communityScore": 0,
-      "communityRank": 38,
+      "communityRank": 37,
       "isFree": false
     },
     "murf-ai": {
@@ -340,7 +340,7 @@
       "searchScore": 22,
       "searchRank": 55,
       "communityScore": 0,
-      "communityRank": 39,
+      "communityRank": 38,
       "isFree": false
     },
     "notion-ai-enhanced": {
@@ -349,7 +349,7 @@
       "searchScore": 42,
       "searchRank": 23,
       "communityScore": 0,
-      "communityRank": 40,
+      "communityRank": 39,
       "isFree": false
     },
     "notion-ai": {
@@ -358,7 +358,7 @@
       "searchScore": 45,
       "searchRank": 20,
       "communityScore": 0,
-      "communityRank": 41,
+      "communityRank": 40,
       "isFree": false
     },
     "otter-ai": {
@@ -367,7 +367,7 @@
       "searchScore": 28,
       "searchRank": 47,
       "communityScore": 0,
-      "communityRank": 42,
+      "communityRank": 41,
       "isFree": false
     },
     "perplexity": {
@@ -376,7 +376,7 @@
       "searchScore": 55,
       "searchRank": 14,
       "communityScore": 0,
-      "communityRank": 43,
+      "communityRank": 42,
       "isFree": false
     },
     "pictory": {
@@ -385,7 +385,7 @@
       "searchScore": 25,
       "searchRank": 50,
       "communityScore": 0,
-      "communityRank": 44,
+      "communityRank": 43,
       "isFree": false
     },
     "pika": {
@@ -394,7 +394,7 @@
       "searchScore": 35,
       "searchRank": 32,
       "communityScore": 0,
-      "communityRank": 45,
+      "communityRank": 44,
       "isFree": false
     },
     "play-ht": {
@@ -403,7 +403,7 @@
       "searchScore": 25,
       "searchRank": 51,
       "communityScore": 0,
-      "communityRank": 46,
+      "communityRank": 45,
       "isFree": false
     },
     "quillbot": {
@@ -412,7 +412,7 @@
       "searchScore": 40,
       "searchRank": 25,
       "communityScore": 0,
-      "communityRank": 47,
+      "communityRank": 46,
       "isFree": false
     },
     "replit-ai": {
@@ -421,7 +421,7 @@
       "searchScore": 30,
       "searchRank": 42,
       "communityScore": 0,
-      "communityRank": 48,
+      "communityRank": 47,
       "isFree": false
     },
     "runway": {
@@ -430,7 +430,7 @@
       "searchScore": 48,
       "searchRank": 17,
       "communityScore": 0,
-      "communityRank": 49,
+      "communityRank": 48,
       "isFree": false
     },
     "rytr": {
@@ -439,7 +439,7 @@
       "searchScore": 28,
       "searchRank": 48,
       "communityScore": 0,
-      "communityRank": 50,
+      "communityRank": 49,
       "isFree": false
     },
     "stable-diffusion": {
@@ -448,7 +448,7 @@
       "searchScore": 40,
       "searchRank": 26,
       "communityScore": 0,
-      "communityRank": 51,
+      "communityRank": 50,
       "isFree": true
     },
     "surfer-seo": {
@@ -457,7 +457,7 @@
       "searchScore": 25,
       "searchRank": 52,
       "communityScore": 0,
-      "communityRank": 52,
+      "communityRank": 51,
       "isFree": false
     },
     "synthesia": {
@@ -466,7 +466,7 @@
       "searchScore": 30,
       "searchRank": 43,
       "communityScore": 0,
-      "communityRank": 53,
+      "communityRank": 52,
       "isFree": false
     },
     "tabnine": {
@@ -474,8 +474,8 @@
       "apiCallsRank": 53,
       "searchScore": 35,
       "searchRank": 33,
-      "communityScore": 4,
-      "communityRank": 4,
+      "communityScore": 0,
+      "communityRank": 53,
       "isFree": false
     },
     "tome": {
