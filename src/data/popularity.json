@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-12T18:48:38.085Z",
+  "updatedAt": "2026-07-13T01:46:24.801Z",
   "tools": {
     "adobe-firefly": {
       "apiCalls": 0,
@@ -65,7 +65,7 @@
       "isFree": false
     },
     "claude": {
-      "apiCalls": 6,
+      "apiCalls": 1,
       "apiCallsRank": 3,
       "searchScore": 72,
       "searchRank": 4,
@@ -137,8 +137,8 @@
       "isFree": false
     },
     "deepseek": {
-      "apiCalls": 10,
-      "apiCallsRank": 2,
+      "apiCalls": 1,
+      "apiCallsRank": 4,
       "searchScore": 70,
       "searchRank": 5,
       "communityScore": 0,
@@ -219,7 +219,7 @@
     },
     "gemini": {
       "apiCalls": 2,
-      "apiCallsRank": 4,
+      "apiCallsRank": 2,
       "searchScore": 78,
       "searchRank": 3,
       "communityScore": 0,
