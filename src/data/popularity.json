@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-08-05T19:12:35.790Z",
+  "updatedAt": "2026-08-06T01:25:32.668Z",
   "tools": {
     "adobe-firefly": {
       "apiCalls": 0,
-      "apiCallsRank": 5,
+      "apiCallsRank": 6,
       "searchScore": 42,
       "searchRank": 21,
       "communityScore": 0,
@@ -12,7 +12,7 @@
     },
     "amazon-q": {
       "apiCalls": 0,
-      "apiCallsRank": 6,
+      "apiCallsRank": 7,
       "searchScore": 22,
       "searchRank": 53,
       "communityScore": 0,
@@ -21,7 +21,7 @@
     },
     "baichuan": {
       "apiCalls": 0,
-      "apiCallsRank": 7,
+      "apiCallsRank": 8,
       "searchScore": 30,
       "searchRank": 40,
       "communityScore": 0,
@@ -30,7 +30,7 @@
     },
     "canva-ai": {
       "apiCalls": 0,
-      "apiCallsRank": 8,
+      "apiCallsRank": 9,
       "searchScore": 50,
       "searchRank": 16,
       "communityScore": 0,
@@ -39,7 +39,7 @@
     },
     "capcut": {
       "apiCalls": 0,
-      "apiCallsRank": 9,
+      "apiCallsRank": 10,
       "searchScore": 55,
       "searchRank": 12,
       "communityScore": 0,
@@ -48,7 +48,7 @@
     },
     "chatglm": {
       "apiCalls": 0,
-      "apiCallsRank": 10,
+      "apiCallsRank": 11,
       "searchScore": 33,
       "searchRank": 35,
       "communityScore": 100,
@@ -56,8 +56,8 @@
       "isFree": false
     },
     "chatgpt": {
-      "apiCalls": 19,
-      "apiCallsRank": 2,
+      "apiCalls": 1,
+      "apiCallsRank": 3,
       "searchScore": 100,
       "searchRank": 1,
       "communityScore": 0,
@@ -75,7 +75,7 @@
     },
     "codeium": {
       "apiCalls": 0,
-      "apiCallsRank": 11,
+      "apiCallsRank": 12,
       "searchScore": 32,
       "searchRank": 36,
       "communityScore": 12,
@@ -84,7 +84,7 @@
     },
     "cody": {
       "apiCalls": 0,
-      "apiCallsRank": 12,
+      "apiCallsRank": 13,
       "searchScore": 28,
       "searchRank": 44,
       "communityScore": 0,
@@ -93,7 +93,7 @@
     },
     "copy-ai-workflows": {
       "apiCalls": 0,
-      "apiCallsRank": 13,
+      "apiCallsRank": 14,
       "searchScore": 35,
       "searchRank": 29,
       "communityScore": 0,
@@ -102,7 +102,7 @@
     },
     "copy-ai": {
       "apiCalls": 0,
-      "apiCallsRank": 14,
+      "apiCallsRank": 15,
       "searchScore": 38,
       "searchRank": 27,
       "communityScore": 0,
@@ -111,7 +111,7 @@
     },
     "cursor": {
       "apiCalls": 0,
-      "apiCallsRank": 15,
+      "apiCallsRank": 16,
       "searchScore": 58,
       "searchRank": 10,
       "communityScore": 81,
@@ -120,7 +120,7 @@
     },
     "d-id": {
       "apiCalls": 0,
-      "apiCallsRank": 16,
+      "apiCallsRank": 17,
       "searchScore": 20,
       "searchRank": 57,
       "communityScore": 0,
@@ -129,7 +129,7 @@
     },
     "dalle": {
       "apiCalls": 0,
-      "apiCallsRank": 17,
+      "apiCallsRank": 18,
       "searchScore": 68,
       "searchRank": 6,
       "communityScore": 0,
@@ -147,7 +147,7 @@
     },
     "descript": {
       "apiCalls": 0,
-      "apiCallsRank": 18,
+      "apiCallsRank": 19,
       "searchScore": 35,
       "searchRank": 30,
       "communityScore": 0,
@@ -156,7 +156,7 @@
     },
     "doubao": {
       "apiCalls": 0,
-      "apiCallsRank": 19,
+      "apiCallsRank": 20,
       "searchScore": 60,
       "searchRank": 9,
       "communityScore": 0,
@@ -165,7 +165,7 @@
     },
     "elevenlabs": {
       "apiCalls": 0,
-      "apiCallsRank": 20,
+      "apiCallsRank": 21,
       "searchScore": 42,
       "searchRank": 22,
       "communityScore": 0,
@@ -174,7 +174,7 @@
     },
     "ernie-bot": {
       "apiCalls": 0,
-      "apiCallsRank": 21,
+      "apiCallsRank": 22,
       "searchScore": 55,
       "searchRank": 13,
       "communityScore": 0,
@@ -183,7 +183,7 @@
     },
     "figma-ai": {
       "apiCalls": 0,
-      "apiCallsRank": 22,
+      "apiCallsRank": 23,
       "searchScore": 45,
       "searchRank": 18,
       "communityScore": 0,
@@ -192,7 +192,7 @@
     },
     "fireflies-ai": {
       "apiCalls": 0,
-      "apiCallsRank": 23,
+      "apiCallsRank": 24,
       "searchScore": 22,
       "searchRank": 54,
       "communityScore": 0,
@@ -201,7 +201,7 @@
     },
     "framer-ai": {
       "apiCalls": 0,
-      "apiCallsRank": 24,
+      "apiCallsRank": 25,
       "searchScore": 28,
       "searchRank": 45,
       "communityScore": 0,
@@ -210,7 +210,7 @@
     },
     "gamma": {
       "apiCalls": 0,
-      "apiCallsRank": 25,
+      "apiCallsRank": 26,
       "searchScore": 32,
       "searchRank": 37,
       "communityScore": 0,
@@ -218,8 +218,8 @@
       "isFree": false
     },
     "gemini": {
-      "apiCalls": 2,
-      "apiCallsRank": 3,
+      "apiCalls": 1,
+      "apiCallsRank": 5,
       "searchScore": 78,
       "searchRank": 3,
       "communityScore": 0,
@@ -228,7 +228,7 @@
     },
     "github-copilot": {
       "apiCalls": 0,
-      "apiCallsRank": 26,
+      "apiCallsRank": 27,
       "searchScore": 62,
       "searchRank": 8,
       "communityScore": 0,
@@ -237,7 +237,7 @@
     },
     "grammarly-ai": {
       "apiCalls": 0,
-      "apiCallsRank": 27,
+      "apiCallsRank": 28,
       "searchScore": 58,
       "searchRank": 11,
       "communityScore": 0,
@@ -246,7 +246,7 @@
     },
     "heygen": {
       "apiCalls": 0,
-      "apiCallsRank": 28,
+      "apiCallsRank": 29,
       "searchScore": 32,
       "searchRank": 38,
       "communityScore": 0,
@@ -255,7 +255,7 @@
     },
     "ideogram": {
       "apiCalls": 0,
-      "apiCallsRank": 29,
+      "apiCallsRank": 30,
       "searchScore": 28,
       "searchRank": 46,
       "communityScore": 0,
@@ -264,7 +264,7 @@
     },
     "jasper-enhanced": {
       "apiCalls": 0,
-      "apiCallsRank": 30,
+      "apiCallsRank": 31,
       "searchScore": 40,
       "searchRank": 24,
       "communityScore": 0,
@@ -273,7 +273,7 @@
     },
     "jasper": {
       "apiCalls": 0,
-      "apiCallsRank": 31,
+      "apiCallsRank": 32,
       "searchScore": 45,
       "searchRank": 19,
       "communityScore": 0,
@@ -281,8 +281,8 @@
       "isFree": false
     },
     "kimi": {
-      "apiCalls": 0,
-      "apiCallsRank": 32,
+      "apiCalls": 2,
+      "apiCallsRank": 2,
       "searchScore": 65,
       "searchRank": 7,
       "communityScore": 0,
