@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T12:27:09.936Z",
+  "updatedAt": "2026-08-26T19:29:42.283Z",
   "tools": {
     "adobe-firefly": {
       "apiCalls": 0,
@@ -474,7 +474,7 @@
       "apiCallsRank": 53,
       "searchScore": 35,
       "searchRank": 33,
-      "communityScore": 4,
+      "communityScore": 3,
       "communityRank": 4,
       "isFree": false
     },
