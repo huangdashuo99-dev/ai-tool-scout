@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T21:32:59.209Z",
+  "updatedAt": "2026-10-03T02:46:32.172Z",
   "tools": {
     "adobe-firefly": {
       "apiCalls": 0,
@@ -137,7 +137,7 @@
       "isFree": false
     },
     "deepseek": {
-      "apiCalls": 90,
+      "apiCalls": 68,
       "apiCallsRank": 1,
       "searchScore": 70,
       "searchRank": 5,
