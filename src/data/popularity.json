@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T20:45:46.635Z",
+  "updatedAt": "2026-10-24T02:23:26.945Z",
   "tools": {
     "adobe-firefly": {
       "apiCalls": 0,
@@ -65,8 +65,8 @@
       "isFree": false
     },
     "claude": {
-      "apiCalls": 1,
-      "apiCallsRank": 4,
+      "apiCalls": 2,
+      "apiCallsRank": 3,
       "searchScore": 72,
       "searchRank": 4,
       "communityScore": 0,
@@ -282,7 +282,7 @@
     },
     "kimi": {
       "apiCalls": 2,
-      "apiCallsRank": 3,
+      "apiCallsRank": 4,
       "searchScore": 65,
       "searchRank": 7,
       "communityScore": 0,
