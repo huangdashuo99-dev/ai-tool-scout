@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T20:46:16.523Z",
+  "updatedAt": "2026-11-01T03:03:10.819Z",
   "tools": {
     "adobe-firefly": {
       "apiCalls": 0,
@@ -56,7 +56,7 @@
       "isFree": false
     },
     "chatgpt": {
-      "apiCalls": 31,
+      "apiCalls": 3,
       "apiCallsRank": 2,
       "searchScore": 100,
       "searchRank": 1,
